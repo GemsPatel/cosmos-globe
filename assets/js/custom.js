@@ -1,26 +1,274 @@
-(function () {
-    var c = document.body.className;
-    c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-    document.body.className = c;
-})();
-
-var wpcf7 = { "api": { "root": "https:\/\/bracketweb.com\/treckwp\/wp-json\/", "namespace": "contact-form-7\/v1" } };
-
-var wc_add_to_cart_params = { "ajax_url": "\/treckwp\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/treckwp\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/bracketweb.com\/treckwp\/treck-cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
-
-var woocommerce_params = { "ajax_url": "\/treckwp\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/treckwp\/?wc-ajax=%%endpoint%%" };
-
-var wc_cart_fragments_params = { "ajax_url": "\/treckwp\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/treckwp\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_a09738d1a51ff4795496a09a3d38daae", "fragment_name": "wc_fragments_a09738d1a51ff4795496a09a3d38daae", "request_timeout": "5000" };
-
-var treck_login_object = { "ajaxurl": "https:\/\/bracketweb.com\/treckwp\/wp-admin\/admin-ajax.php", "login_redirect_url": "http:\/\/bracketweb.com\/treckwp\/my-account\/", "registration_redirect_url": "http:\/\/bracketweb.com\/treckwp\/my-account\/", "message": "<strong>Error:<\/strong>Please use valid userName or password", "check_login": "no", "str_login": "Please login to add favorite!", "str_add_wishlist": "Add favorite successfully!", "str_remove_wishlist": "Remove favorite successfully!" };
-
-var _wpUtilSettings = { "ajax": { "url": "\/treckwp\/wp-admin\/admin-ajax.php" } };
-
-var wc_add_to_cart_variation_params = { "wc_ajax_url": "\/treckwp\/?wc-ajax=%%endpoint%%", "i18n_no_matching_variations_text": "Sorry, no products matched your selection. Please choose a different combination.", "i18n_make_a_selection_text": "Please select some product options before adding this product to your cart.", "i18n_unavailable_text": "Sorry, this product is unavailable. Please choose a different combination." };
-
-var woosq_vars = { "ajax_url": "https:\/\/bracketweb.com\/treckwp\/wp-admin\/admin-ajax.php", "view": "popup", "effect": "mfp-3d-unfold", "scrollbar": "yes", "auto_close": "yes", "hashchange": "no", "cart_redirect": "no", "cart_url": "https:\/\/bracketweb.com\/treckwp\/treck-cart\/", "close": "Close (Esc)", "next": "Next (Right arrow key)", "prev": "Previous (Left arrow key)", "thumbnails_effect": "no", "related_slick_params": "{\"slidesToShow\":2,\"slidesToScroll\":2,\"dots\":true,\"arrows\":false,\"adaptiveHeight\":true,\"rtl\":false}", "thumbnails_slick_params": "{\"slidesToShow\":1,\"slidesToScroll\":1,\"dots\":true,\"arrows\":true,\"adaptiveHeight\":false,\"rtl\":false}", "thumbnails_zoom_params": "{\"duration\":120,\"magnify\":1}" };
-
-var woosw_vars = { "ajax_url": "https:\/\/bracketweb.com\/treckwp\/wp-admin\/admin-ajax.php", "menu_action": "open_page", "perfect_scrollbar": "yes", "wishlist_url": "https:\/\/bracketweb.com\/treckwp\/wishlist\/", "button_action": "list", "message_position": "right-top", "button_action_added": "popup", "empty_confirm": "This action cannot be undone. Are you sure?", "delete_confirm": "This action cannot be undone. Are you sure?", "copied_text": "Copied the wishlist link:", "menu_text": "Wishlist", "button_text": "Add to wishlist", "button_text_added": "Browse wishlist", "button_normal_icon": "woosw-icon-5", "button_added_icon": "woosw-icon-8", "button_loading_icon": "woosw-icon-4" };
-
-var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.13.4", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "landing-pages": true }, "urls": { "assets": "https:\/\/bracketweb.com\/treckwp\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 14, "title": "Treck%20%E2%80%93%20Immigration%20and%20Visa%20Consulting%20WordPress%20Theme", "excerpt": "", "featuredImage": false } };
- 
+(function ($) {
+    "use strict";
+  
+    if ($(".main-menu__list").length) {
+      let currentMenuItem = $(".main-menu__list").find("li.current-menu-item");
+      let currentMenuParent = $(".main-menu__list").find(
+        "li.current-menu-parent"
+      );
+      let currentMenuAncestor = $(".main-menu__list").find(
+        "li.current-menu-ancestor"
+      );
+      let currentPageItem = $(".main-menu__list").find("li.current_page_item");
+      currentMenuItem.addClass("current");
+      currentMenuParent.addClass("current");
+      currentMenuAncestor.addClass("current");
+      currentPageItem.addClass("current");
+    }
+  
+    // Accrodion
+    if ($(".accrodion-grp").length) {
+      var accrodionGrp = $(".accrodion-grp");
+      accrodionGrp.each(function () {
+        var accrodionName = $(this).data("grp-name");
+        var Self = $(this);
+        var accordion = Self.find(".accrodion");
+        Self.addClass(accrodionName);
+        Self.find(".accrodion .accrodion-content").hide();
+        Self.find(".accrodion.active").find(".accrodion-content").show();
+        accordion.each(function () {
+          $(this)
+            .find(".accrodion-title")
+            .on("click", function () {
+              if ($(this).parent().hasClass("active") === false) {
+                $(".accrodion-grp." + accrodionName)
+                  .find(".accrodion")
+                  .removeClass("active");
+                $(".accrodion-grp." + accrodionName)
+                  .find(".accrodion")
+                  .find(".accrodion-content")
+                  .slideUp();
+                $(this).parent().addClass("active");
+                $(this).parent().find(".accrodion-content").slideDown();
+              }
+            });
+        });
+      });
+    }
+  
+    if ($(".scroll-to-target").length) {
+      $(".scroll-to-target").on("click", function () {
+        var target = $(this).attr("data-target");
+        // animate
+        $("html, body").animate(
+          {
+            scrollTop: $(target).offset().top
+          },
+          1000
+        );
+  
+        return false;
+      });
+    }
+  
+    if ($(".video-popup").length) {
+      $(".video-popup").magnificPopup({
+        type: "iframe",
+        mainClass: "mfp-fade",
+        removalDelay: 160,
+        preloader: true,
+  
+        fixedContentPos: false
+      });
+    }
+  
+    if ($(".img-popup").length) {
+      var groups = {};
+      $(".img-popup").each(function () {
+        var id = parseInt($(this).attr("data-group"), 10);
+  
+        if (!groups[id]) {
+          groups[id] = [];
+        }
+  
+        groups[id].push(this);
+      });
+  
+      $.each(groups, function () {
+        $(this).magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          closeBtnInside: false,
+          gallery: {
+            enabled: true
+          }
+        });
+      });
+    }
+  
+    if ($(".add").length) {
+      $(document).on("click", ".add", function () {
+        if ($(this).prev().val() < 999) {
+          $(this)
+            .prev()
+            .val(+$(this).prev().val() + 1);
+        }
+        $(this).prev().trigger("change");
+      });
+    }
+  
+    if ($(".sub").length) {
+      $(document).on("click", ".sub", function () {
+        if ($(this).next().val() > 0) {
+          if ($(this).next().val() > 0)
+            $(this)
+              .next()
+              .val(+$(this).next().val() - 1);
+        }
+        $(this).next().trigger("change");
+      });
+    }
+  
+    if ($(".main-menu__list").length && $(".mobile-nav__container").length) {
+      let navContent = document.querySelector(".main-menu__list").outerHTML;
+      let mobileNavContainer = document.querySelector(".mobile-nav__container");
+      mobileNavContainer.innerHTML = navContent;
+    }
+    if ($(".sticky-header__content").length) {
+      let navContent = document.querySelector(".main-menu").innerHTML;
+      let mobileNavContainer = document.querySelector(".sticky-header__content");
+      mobileNavContainer.innerHTML = navContent;
+    }
+  
+    if ($(".mobile-nav__container .main-menu__list").length) {
+      let dropdownAnchor = $(
+        ".mobile-nav__container .main-menu__list .menu-item-has-children > a"
+      );
+      dropdownAnchor.each(function () {
+        let self = $(this);
+        let toggleBtn = document.createElement("BUTTON");
+        toggleBtn.setAttribute("aria-label", "dropdown toggler");
+        toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
+        self.append(function () {
+          return toggleBtn;
+        });
+        self.find("button").on("click", function (e) {
+          e.preventDefault();
+          let self = $(this);
+          self.toggleClass("expanded");
+          self.parent().toggleClass("expanded");
+          self.parent().parent().children("ul").slideToggle();
+        });
+      });
+    }
+  
+    if ($(".mobile-nav__toggler").length) {
+      $(".mobile-nav__toggler").on("click", function (e) {
+        e.preventDefault();
+        $(".mobile-nav__wrapper").toggleClass("expanded");
+        $("body").toggleClass("locked");
+      });
+    }
+  
+    if ($(".search-toggler").length) {
+      $(".search-toggler").on("click", function (e) {
+        e.preventDefault();
+        $(".search-popup").toggleClass("active");
+        $(".mobile-nav__wrapper").removeClass("expanded");
+        $("body").toggleClass("locked");
+      });
+    }
+  
+    if ($(".dynamic-year").length) {
+      let date = new Date();
+      $(".dynamic-year").html(date.getFullYear());
+    }
+  
+    if ($(".wow").length) {
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animated", // animation css class (default is animated)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true // act on asynchronously loaded content (default is true)
+      });
+      wow.init();
+    }
+  
+    // window load event
+  
+    $(window).on("load", function () {
+      if ($(".preloader").length) {
+        $(".preloader").fadeOut();
+      }
+  
+      if ($(".product__items ul.products").length) {
+        $(".product__items ul.products").imagesLoaded(function () {
+          $(".product__items ul.products").isotope({
+            layoutMode: "masonry"
+          });
+        });
+      }
+    });
+  
+    // window scroll event
+  
+    $(window).on("scroll", function () {
+      if ($(".stricked-menu").length) {
+        var headerScrollPos = 130;
+        var stricky = $(".stricked-menu");
+        if ($(window).scrollTop() > headerScrollPos) {
+          stricky.addClass("stricky-fixed");
+        } else if ($(this).scrollTop() <= headerScrollPos) {
+          stricky.removeClass("stricky-fixed");
+        }
+      }
+      if ($(".scroll-to-top").length) {
+        var strickyScrollPos = 100;
+        if ($(window).scrollTop() > strickyScrollPos) {
+          $(".scroll-to-top").fadeIn(500);
+        } else if ($(this).scrollTop() <= strickyScrollPos) {
+          $(".scroll-to-top").fadeOut(500);
+        }
+      }
+    });
+  
+    $(document).on("click", ".shop-one__cart.treck_ajax ", function (e) {
+      $(".treck-overlay").fadeIn(300);
+    });
+  
+    $(document.body).on(
+      "added_to_cart",
+      function (event, fragments, cart_hash, $button) {
+        $(".treck-overlay").fadeOut(300);
+      }
+    );
+  
+    // custom coursor
+    if ($(".custom-cursor").length) {
+      var cursor = document.querySelector(".custom-cursor__cursor");
+      var cursorinner = document.querySelector(".custom-cursor__cursor-two");
+      var a = document.querySelectorAll("a");
+  
+      document.addEventListener("mousemove", function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+      });
+  
+      document.addEventListener("mousemove", function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursorinner.style.left = x + "px";
+        cursorinner.style.top = y + "px";
+      });
+  
+      document.addEventListener("mousedown", function () {
+        cursor.classList.add("click");
+        cursorinner.classList.add("custom-cursor__innerhover");
+      });
+  
+      document.addEventListener("mouseup", function () {
+        cursor.classList.remove("click");
+        cursorinner.classList.remove("custom-cursor__innerhover");
+      });
+  
+      a.forEach((item) => {
+        item.addEventListener("mouseover", () => {
+          cursor.classList.add("custom-cursor__hover");
+        });
+        item.addEventListener("mouseleave", () => {
+          cursor.classList.remove("custom-cursor__hover");
+        });
+      });
+    }
+  })(jQuery);
