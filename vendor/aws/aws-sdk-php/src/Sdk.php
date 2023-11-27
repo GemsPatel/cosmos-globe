@@ -66,6 +66,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionAutoScaling(array $args = [])
  * @method \Aws\AutoScalingPlans\AutoScalingPlansClient createAutoScalingPlans(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionAutoScalingPlans(array $args = [])
+ * @method \Aws\BCMDataExports\BCMDataExportsClient createBCMDataExports(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionBCMDataExports(array $args = [])
  * @method \Aws\Backup\BackupClient createBackup(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionBackup(array $args = [])
  * @method \Aws\BackupGateway\BackupGatewayClient createBackupGateway(array $args = [])
@@ -108,6 +110,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionCloudFormation(array $args = [])
  * @method \Aws\CloudFront\CloudFrontClient createCloudFront(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionCloudFront(array $args = [])
+ * @method \Aws\CloudFrontKeyValueStore\CloudFrontKeyValueStoreClient createCloudFrontKeyValueStore(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionCloudFrontKeyValueStore(array $args = [])
  * @method \Aws\CloudHSMV2\CloudHSMV2Client createCloudHSMV2(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionCloudHSMV2(array $args = [])
  * @method \Aws\CloudHsm\CloudHsmClient createCloudHsm(array $args = [])
@@ -184,6 +188,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionControlTower(array $args = [])
  * @method \Aws\CostExplorer\CostExplorerClient createCostExplorer(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionCostExplorer(array $args = [])
+ * @method \Aws\CostOptimizationHub\CostOptimizationHubClient createCostOptimizationHub(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionCostOptimizationHub(array $args = [])
  * @method \Aws\CostandUsageReportService\CostandUsageReportServiceClient createCostandUsageReportService(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionCostandUsageReportService(array $args = [])
  * @method \Aws\CustomerProfiles\CustomerProfilesClient createCustomerProfiles(array $args = [])
@@ -228,6 +234,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionECRPublic(array $args = [])
  * @method \Aws\EKS\EKSClient createEKS(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionEKS(array $args = [])
+ * @method \Aws\EKSAuth\EKSAuthClient createEKSAuth(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionEKSAuth(array $args = [])
  * @method \Aws\EMRContainers\EMRContainersClient createEMRContainers(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionEMRContainers(array $args = [])
  * @method \Aws\EMRServerless\EMRServerlessClient createEMRServerless(array $args = [])
@@ -276,6 +284,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionForecastService(array $args = [])
  * @method \Aws\FraudDetector\FraudDetectorClient createFraudDetector(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionFraudDetector(array $args = [])
+ * @method \Aws\FreeTier\FreeTierClient createFreeTier(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionFreeTier(array $args = [])
  * @method \Aws\GameLift\GameLiftClient createGameLift(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionGameLift(array $args = [])
  * @method \Aws\Glacier\GlacierClient createGlacier(array $args = [])
@@ -314,6 +324,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionInspector(array $args = [])
  * @method \Aws\Inspector2\Inspector2Client createInspector2(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionInspector2(array $args = [])
+ * @method \Aws\InspectorScan\InspectorScanClient createInspectorScan(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionInspectorScan(array $args = [])
  * @method \Aws\InternetMonitor\InternetMonitorClient createInternetMonitor(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionInternetMonitor(array $args = [])
  * @method \Aws\IoT1ClickDevicesService\IoT1ClickDevicesServiceClient createIoT1ClickDevicesService(array $args = [])
@@ -552,6 +564,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionRedshiftServerless(array $args = [])
  * @method \Aws\Rekognition\RekognitionClient createRekognition(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionRekognition(array $args = [])
+ * @method \Aws\Repostspace\RepostspaceClient createRepostspace(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionRepostspace(array $args = [])
  * @method \Aws\ResilienceHub\ResilienceHubClient createResilienceHub(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionResilienceHub(array $args = [])
  * @method \Aws\ResourceExplorer2\ResourceExplorer2Client createResourceExplorer2(array $args = [])
@@ -700,6 +714,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionWorkMailMessageFlow(array $args = [])
  * @method \Aws\WorkSpaces\WorkSpacesClient createWorkSpaces(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionWorkSpaces(array $args = [])
+ * @method \Aws\WorkSpacesThinClient\WorkSpacesThinClientClient createWorkSpacesThinClient(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionWorkSpacesThinClient(array $args = [])
  * @method \Aws\WorkSpacesWeb\WorkSpacesWebClient createWorkSpacesWeb(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionWorkSpacesWeb(array $args = [])
  * @method \Aws\XRay\XRayClient createXRay(array $args = [])
@@ -721,7 +737,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.287.0';
+    const VERSION = '3.289.0';
 
     /** @var array Arguments for creating clients */
     private $args;
