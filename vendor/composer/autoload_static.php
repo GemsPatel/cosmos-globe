@@ -1206,6 +1206,8 @@ class ComposerStaticInit53ad391e6621f9b55a3720e0083dde58
         'Aws\\AwsClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/AwsClient.php',
         'Aws\\AwsClientInterface' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/AwsClientInterface.php',
         'Aws\\AwsClientTrait' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/AwsClientTrait.php',
+        'Aws\\B2bi\\B2biClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/B2bi/B2biClient.php',
+        'Aws\\B2bi\\Exception\\B2biException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/B2bi/Exception/B2biException.php',
         'Aws\\BCMDataExports\\BCMDataExportsClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/BCMDataExports/BCMDataExportsClient.php',
         'Aws\\BCMDataExports\\Exception\\BCMDataExportsException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/BCMDataExports/Exception/BCMDataExportsException.php',
         'Aws\\BackupGateway\\BackupGatewayClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/BackupGateway/BackupGatewayClient.php',

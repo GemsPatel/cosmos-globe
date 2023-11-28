@@ -262,6 +262,8 @@ return array(
     'Aws\\AwsClient' => $vendorDir . '/aws/aws-sdk-php/src/AwsClient.php',
     'Aws\\AwsClientInterface' => $vendorDir . '/aws/aws-sdk-php/src/AwsClientInterface.php',
     'Aws\\AwsClientTrait' => $vendorDir . '/aws/aws-sdk-php/src/AwsClientTrait.php',
+    'Aws\\B2bi\\B2biClient' => $vendorDir . '/aws/aws-sdk-php/src/B2bi/B2biClient.php',
+    'Aws\\B2bi\\Exception\\B2biException' => $vendorDir . '/aws/aws-sdk-php/src/B2bi/Exception/B2biException.php',
     'Aws\\BCMDataExports\\BCMDataExportsClient' => $vendorDir . '/aws/aws-sdk-php/src/BCMDataExports/BCMDataExportsClient.php',
     'Aws\\BCMDataExports\\Exception\\BCMDataExportsException' => $vendorDir . '/aws/aws-sdk-php/src/BCMDataExports/Exception/BCMDataExportsException.php',
     'Aws\\BackupGateway\\BackupGatewayClient' => $vendorDir . '/aws/aws-sdk-php/src/BackupGateway/BackupGatewayClient.php',
