@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-stag-master',
         'version' => 'dev-stag-master',
-        'reference' => 'f15dde3932dd336f3261e38c2dc0388965ec2130',
+        'reference' => 'd01ff6c45cbb1e7a589e8abf146892211990d38f',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -84,6 +84,15 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'davejamesmiller/laravel-breadcrumbs' => array(
+            'pretty_version' => '5.3.2',
+            'version' => '5.3.2.0',
+            'reference' => '99f92a706faefb5e1816caa96e877a0184509e5b',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../davejamesmiller/laravel-breadcrumbs',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'defuse/php-encryption' => array(
             'pretty_version' => 'v2.4.0',
@@ -236,7 +245,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../facade/ignition-contracts',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'fakerphp/faker' => array(
             'pretty_version' => 'v1.23.0',
@@ -604,7 +613,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-stag-master',
             'version' => 'dev-stag-master',
-            'reference' => 'f15dde3932dd336f3261e38c2dc0388965ec2130',
+            'reference' => 'd01ff6c45cbb1e7a589e8abf146892211990d38f',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

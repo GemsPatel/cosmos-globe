@@ -63,11 +63,11 @@
         }
 
         .page-header-bg {
-            background-image: url(assets/uploads/2023/04/page-header-bg.jpg);
+            background-image: url({{url('public/uploads/2023/04/page-header-bg.jpg')}});
         }
 
         .preloader .preloader__image {
-            background-image: url(assets/uploads/2023/04/loader.png);
+            background-image: url({{url('public/uploads/2023/04/loader.png')}});
         }
 
         :root {
@@ -80,7 +80,7 @@
         }
 
         .page-header-bg {
-            background-image: url(assets/uploads/2023/04/page-header-bg.jpg);
+            background-image: url({{url('public/uploads/2023/04/page-header-bg.jpg')}});
         }
     </style>
 
@@ -101,3 +101,4 @@
     <div id="page" class="site page-wrapper">
     @include('elements.header-menu')
     
+   

@@ -16,7 +16,7 @@
                                     <div class="main-menu__wrapper">
                                         <div class="main-menu__wrapper-inner">
                                             <div class="main-menu__logo logo-retina">
-                                                <a href="index.html">
+                                                <a href="{{route('home')}}">
                                                     <img decoding="async" width="136" height="39"
                                                         src="{{url('public/uploads/2023/04/logo-dark.png')}}" alt="Treck">
                                                 </a>
@@ -151,7 +151,7 @@
                                                                 <ul id="menu-menu-1" class="main-menu__list">
                                                                     <li id="menu-item-967"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-967">
-                                                                        <a href="index.html">Home</a>
+                                                                        <a href="{{route('home')}}">Home</a>
                                                                     </li>
                                                                     {{-- <li id="menu-item-965"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-965">
@@ -203,7 +203,7 @@
                                                                             </li>
                                                                             <li id="menu-item-985"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-985">
-                                                                                <a href="visa-details.html">Business
+                                                                                <a href="{{ route('businessVisa')}}">Business
                                                                                     Visa</a>
                                                                             </li>
                                                                             <li id="menu-item-1601"
@@ -235,11 +235,11 @@
                                                                     </li>
                                                                     <li id="menu-item-968"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-968">
-                                                                        <a href="countries.html">Countries</a>
+                                                                        <a href="javascript:void(0)">Countries</a>
                                                                         <ul class="sub-menu">
                                                                             <li id="menu-item-1607"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1607">
-                                                                                <a href="canada.html">Canada</a>
+                                                                                <a href="{{ route('country.canada')}}">Canada</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>

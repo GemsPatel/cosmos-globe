@@ -9,6 +9,7 @@
         "aws/aws-sdk-php": "^3.208",
         "barryvdh/laravel-dompdf": "^2.0",
         "cion/laravel-text-to-speech": "^1.5",
+        "davejamesmiller/laravel-breadcrumbs": "^5.3",
         "doctrine/dbal": "^3.1",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^3.0",

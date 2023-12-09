@@ -89,9 +89,9 @@
                                 <section
                                     class="elementor-section elementor-inner-section elementor-element elementor-element-f5fb834 site-footer__middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="f5fb834" data-element_type="section">
-                                    <div class="container d-flex justify-content-between align-content-center">
-                                        <div class="col-3 col-md-3 elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-93fd636"
-                                            data-id="93fd636" data-element_type="column">
+                                    <div class="container">
+                                        <div class="row">
+                                        <div class="col-md-3 ">
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-b80b9d9 elementor-widget__width-initial elementor-widget elementor-widget-footer-about"
                                                     data-id="b80b9d9" data-element_type="widget"
@@ -126,8 +126,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-2 col-md-2 elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-c5cfed2"
-                                            data-id="c5cfed2" data-element_type="column">
+                                        <div class="col-md-1">
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-c05ebf2 elementor-widget__width-initial elementor-widget elementor-widget-footer-nav-menu"
                                                     data-id="c05ebf2" data-element_type="widget"
@@ -167,8 +166,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class=" col-2 col-md-2 elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-959b512"
-                                            data-id="959b512" data-element_type="column">
+                                        <div class="col-md-2">
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-a3db553 elementor-widget__width-initial elementor-widget elementor-widget-footer-nav-menu"
                                                     data-id="a3db553" data-element_type="widget"
@@ -208,8 +206,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-3 col-md-3 elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-f127835"
-                                            data-id="f127835" data-element_type="column">
+                                        <div class="col-md-3 ">
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-a2562de elementor-widget__width-initial elementor-widget elementor-widget-treck-footer-gallery"
                                                     data-id="a2562de" data-element_type="widget"
@@ -299,8 +296,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-fbcf027"
-                                            data-id="fbcf027" data-element_type="column">
+                                        <div class="col-md-3">
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-fff9046 elementor-widget__width-initial elementor-widget elementor-widget-footer-contact"
                                                     data-id="fff9046" data-element_type="widget"
@@ -348,6 +344,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                     </div>
                                 </section>
                                 <div class="elementor-element elementor-element-ab3ae9b elementor-widget elementor-widget-footer-copyright"
