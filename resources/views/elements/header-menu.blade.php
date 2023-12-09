@@ -26,7 +26,7 @@
                                                     class="main-menu__search search-toggler icon-magnifying-glass"><span>Search...</span></a>
                                             </div>
                                             <div class="main-menu__wrapper-inner-content">
-                                                <div class="main-menu__update-box">
+                                                {{-- <div class="main-menu__update-box">
                                                     <div class="main-menu__update-box-inner">
                                                         <div class="main-menu__update-box-left">
                                                             <div class="main-menu__update-icon-box">
@@ -91,7 +91,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                                 <div class="main-menu__top">
                                                     <div class="main-menu__top-inner">
                                                         <div class="main-menu__top-left">
@@ -153,7 +153,7 @@
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-967">
                                                                         <a href="index.html">Home</a>
                                                                     </li>
-                                                                    <li id="menu-item-965"
+                                                                    {{-- <li id="menu-item-965"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-965">
                                                                         <a href="coaching.html">Coaching</a>
                                                                         <ul class="sub-menu">
@@ -192,7 +192,7 @@
                                                                                     Coaching</a>
                                                                             </li>
                                                                         </ul>
-                                                                    </li>
+                                                                    </li> --}}
                                                                     <li id="menu-item-984"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-984">
                                                                         <a href="visa.html">Visa</a>
@@ -211,11 +211,11 @@
                                                                                 <a href="tourist-visa.html">Tourist
                                                                                     Visa</a>
                                                                             </li>
-                                                                            <li id="menu-item-1599"
+                                                                            {{-- <li id="menu-item-1599"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1599">
                                                                                 <a href="student-visa.html">Student
                                                                                     Visa</a>
-                                                                            </li>
+                                                                            </li> --}}
                                                                             <li id="menu-item-1602"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602">
                                                                                 <a href="residence-visa.html">Residence

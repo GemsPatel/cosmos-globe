@@ -1,3 +1,4 @@
+</div>
         <div class="footer-wrapper">
             <!-- the loop -->
             <div data-elementor-type="wp-post" data-elementor-id="1024" class="elementor elementor-1024">
@@ -18,7 +19,7 @@
                                                 <div class="elementor-element elementor-element-e5fc1b2 elementor-widget elementor-widget-treck-footer-top"
                                                     data-id="e5fc1b2" data-element_type="widget"
                                                     data-widget_type="treck-footer-top.default">
-                                                    <div class="elementor-widget-container">
+                                                    <div class="container">
                                                         <div class="site-footer__top">
                                                             <div class="site-footer__map float-bob-x">
                                                                 <img decoding="async"
@@ -88,14 +89,14 @@
                                 <section
                                     class="elementor-section elementor-inner-section elementor-element elementor-element-f5fb834 site-footer__middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="f5fb834" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-default">
-                                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-93fd636"
+                                    <div class="container d-flex justify-content-between align-content-center">
+                                        <div class="col-3 col-md-3 elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-93fd636"
                                             data-id="93fd636" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-b80b9d9 elementor-widget__width-initial elementor-widget elementor-widget-footer-about"
                                                     data-id="b80b9d9" data-element_type="widget"
                                                     data-widget_type="footer-about.default">
-                                                    <div class="elementor-widget-container">
+                                                    <div class="container">
                                                         <div class="footer-widget__column footer-widget__about">
                                                             <div class="footer-widget__logo logo-retina">
                                                                 <a href="index.html">
@@ -125,13 +126,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-c5cfed2"
+                                        <div class="col-2 col-md-2 elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-c5cfed2"
                                             data-id="c5cfed2" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-c05ebf2 elementor-widget__width-initial elementor-widget elementor-widget-footer-nav-menu"
                                                     data-id="c05ebf2" data-element_type="widget"
                                                     data-widget_type="footer-nav-menu.default">
-                                                    <div class="elementor-widget-container">
+                                                    <div class="container">
                                                         <div class="footer-widget__column footer-widget__link">
                                                             <div class="footer-widget__title-box">
                                                                 <h3 class="footer-widget__title">Explore</h3>
@@ -166,13 +167,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-959b512"
+                                        <div class=" col-2 col-md-2 elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-959b512"
                                             data-id="959b512" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-a3db553 elementor-widget__width-initial elementor-widget elementor-widget-footer-nav-menu"
                                                     data-id="a3db553" data-element_type="widget"
                                                     data-widget_type="footer-nav-menu.default">
-                                                    <div class="elementor-widget-container">
+                                                    <div class="container">
                                                         <div class="footer-widget__column footer-widget__link">
                                                             <div class="footer-widget__title-box">
                                                                 <h3 class="footer-widget__title">Visa</h3>
@@ -207,13 +208,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-f127835"
+                                        <div class="col-3 col-md-3 elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-f127835"
                                             data-id="f127835" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-a2562de elementor-widget__width-initial elementor-widget elementor-widget-treck-footer-gallery"
                                                     data-id="a2562de" data-element_type="widget"
                                                     data-widget_type="treck-footer-gallery.default">
-                                                    <div class="elementor-widget-container">
+                                                    <div class="container">
                                                         <div class="footer-widget__column footer-widget__gallery">
                                                             <div class="footer-widget__title-box">
                                                                 <h3 class="footer-widget__title">Gallery</h3>
@@ -304,7 +305,7 @@
                                                 <div class="elementor-element elementor-element-fff9046 elementor-widget__width-initial elementor-widget elementor-widget-footer-contact"
                                                     data-id="fff9046" data-element_type="widget"
                                                     data-widget_type="footer-contact.default">
-                                                    <div class="elementor-widget-container">
+                                                    <div class="container">
                                                         <div class="footer-widget__column footer-widget__Contact">
 
                                                             <div class="footer-widget__title-box">
@@ -372,10 +373,8 @@
                 </section>
             </div>
             <!-- end of the loop -->
-
-
         </div><!-- /.footer-wrapper -->
-
+    
         <script src="{{url('public/js/jQuery.style.switcher.min.js')}}"></script>
         <script src="{{url('public/js/color-switcher.js')}}"></script>
         <script src="{{url('public/themes/vendors/bootstrap/js/bootstrap.minbb93.js')}}"></script>

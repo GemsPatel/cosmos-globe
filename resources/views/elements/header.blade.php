@@ -98,6 +98,6 @@
         <div class="preloader__image"></div>
     </div>
     <!-- /.preloader -->
-
+    <div id="page" class="site page-wrapper">
     @include('elements.header-menu')
     
