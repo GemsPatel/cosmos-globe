@@ -133,10 +133,10 @@
                                                                     <a class="" href="login.html">Login</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a class=" " href="faqs.html">Faq’s</a>
+                                                                    <a class=" " href="{{route('faqs')}}">Faq’s</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a class="  " href="contact.html">Contact</a>
+                                                                    <a class="  " href="{{route('contactUs')}}">Contact</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -245,15 +245,15 @@
                                                                     </li>
                                                                     <li id="menu-item-960"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-960">
-                                                                        <a href="about-us.html">About Us</a>
+                                                                        <a href="{{route('aboutUs')}}">About Us</a>
                                                                     </li>
                                                                     <li id="menu-item-971"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-971">
-                                                                        <a href="gallery.html">Gallery</a>
+                                                                        <a href="{{route('gallery')}}">Gallery</a>
                                                                     </li>
                                                                     <li id="menu-item-967"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-967">
-                                                                        <a href="contact.html">Contact</a>
+                                                                        <a href="{{route('contactUs')}}">Contact</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>

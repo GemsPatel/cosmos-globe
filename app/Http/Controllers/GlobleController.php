@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Web;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CountryController extends Controller
+class GlobleController extends Controller
 {
-    public function index()
+    public function CountryCanada()
     {
         return view('web.country.index',[
             'title'=>'Canada',

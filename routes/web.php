@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\CmsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\CronController;
+use App\Http\Controllers\GlobleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ScraperController;
 use App\Http\Controllers\Web\CountryController;
@@ -25,5 +27,11 @@ Route::get('report/{id}', [CronController::class, 'reportView']);
 
 Route::get('scraper', [ScraperController::class, 'index']);
 
-Route::get('business-visa',[BusinessVisaController::class,'index'])->name('businessVisa');
-Route::get('country/canada',[CountryController::class,'index'])->name('country.canada');
+Route::get('business-visa',[CmsController::class,'businessVisa'])->name('businessVisa');
+Route::get('contact-us',[CmsController::class,'contactUs'])->name('contactUs');
+Route::get('about-us',[CmsController::class,'aboutUs'])->name('aboutUs');
+Route::get('gallery',[CmsController::class,'gallery'])->name('gallery');
+Route::get('faqs',[CmsController::class,'faqs'])->name('faqs');
+
+
+Route::get('country/canada',[GlobleController::class,'CountryCanada'])->name('country.canada');
