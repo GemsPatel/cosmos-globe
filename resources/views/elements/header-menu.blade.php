@@ -195,11 +195,11 @@
                                                                     </li> --}}
                                                                     <li id="menu-item-984"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-984">
-                                                                        <a href="visa.html">Visa</a>
+                                                                        <a href="#">Visa</a>
                                                                         <ul class="sub-menu">
                                                                             <li id="menu-item-1324"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1324">
-                                                                                <a href="visa.html">Visa</a>
+                                                                                <a href="{{ route('businessVisa')}}">Visa</a>
                                                                             </li>
                                                                             <li id="menu-item-985"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-985">
@@ -208,7 +208,7 @@
                                                                             </li>
                                                                             <li id="menu-item-1601"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601">
-                                                                                <a href="tourist-visa.html">Tourist
+                                                                                <a href="{{ route('businessVisa')}}">Tourist
                                                                                     Visa</a>
                                                                             </li>
                                                                             {{-- <li id="menu-item-1599"
@@ -218,17 +218,17 @@
                                                                             </li> --}}
                                                                             <li id="menu-item-1602"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602">
-                                                                                <a href="residence-visa.html">Residence
+                                                                                <a href="{{ route('businessVisa')}}">Residence
                                                                                     Visa</a>
                                                                             </li>
                                                                             <li id="menu-item-1603"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603">
-                                                                                <a href="employement-visa.html">Employement
+                                                                                <a href="{{ route('businessVisa')}}">Employement
                                                                                     Visa</a>
                                                                             </li>
                                                                             <li id="menu-item-1600"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1600">
-                                                                                <a href="transit-visa.html">Transit
+                                                                                <a href="{{ route('businessVisa')}}">Transit
                                                                                     Visa</a>
                                                                             </li>
                                                                         </ul>
