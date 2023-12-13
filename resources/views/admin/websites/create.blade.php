@@ -90,6 +90,14 @@
                                             </select>
                                         </div>
 
+										<div class="form-group">
+                                            <label for="google_client_ca_pub_code">Google Client CA PUB Code</label>
+                                            <input type="text" class="form-control" id="google_client_ca_pub_code" name="google_client_ca_pub_code" placeholder="{{ __('Google Client CA PUB Code') }}" value="{{old('google_client_ca_pub_code')}}">
+                                            @if($errors->has('google_client_ca_pub_code'))
+                                                <div class="error">{{ $errors->first('google_client_ca_pub_code') }}</div>
+                                            @endif
+                                        </div>
+										
                                         <div class="form-group">
                                             <label for="status">Status</label>
                                             <select class="form-control" name="status" id="status">

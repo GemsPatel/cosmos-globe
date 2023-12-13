@@ -36,9 +36,9 @@
 
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-md-12">
+                                            <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="category_id">Category</label>
+                                                        <label for="category_id">Parent Category</label>
                                                         <select class="form-control category_id" id="category_id" name="category_id">
                                                                 <option value="">Select Category</option>
                                                                 @forelse( $categoryArr as $ar)
@@ -53,7 +53,7 @@
                                                     </div>
                                             </div>
 
-                                            <div class="col-md-6 d-none">
+                                            <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="sub_category_id">Sub Category</label>
                                                     <select class="form-control sub_category_id" id="sub_category_id" name="sub_category_id">
@@ -108,7 +108,7 @@
                                                 <div class="error">{{ $errors->first('short_description') }}</div>
                                             @endif
                                         </div>
-                                        <div class="form-group mb-0">
+                                        <div class="form-group mb-0 d-none">
                                             <label class="BlogTags-txt">Add Blog Tag </label>
                                             <div class="row">
                                                 <div class="col-md-10 toggle-btn">
@@ -126,7 +126,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
+                                        <div class="form-group d-none">
                                             <label for="title">Recommended Blog</label>
                                             <select name="blog_id" class="form-control blog_id">
                                                 @forelse( $blogArr as $ar )

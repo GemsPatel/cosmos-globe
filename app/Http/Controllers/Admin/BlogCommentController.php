@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 class BlogCommentController extends Controller
 {
+    public $websiteDetails = "";
+
     /**
      * @Function:        <__construct>
      * @Author:          Gautam Kakadiya( ShreeGurave Dev Team )
@@ -20,6 +22,7 @@ class BlogCommentController extends Controller
     public function __construct()
     {
         // $this->middleware('admin');
+        $this->websiteDetails = getHeaderInformation();
     }
 
     /**
@@ -34,7 +37,7 @@ class BlogCommentController extends Controller
      */
     public function index()
     {
-        $dataArr = BlogComments::with('blog')->where( 'parent_id', 0 )->get();
+        $dataArr = BlogComments::with('blog')->where( ['parent_id' => 0, 'website_id' => $this->websiteDetails->id ] )->get();
         return view('admin.blog-comments.index', compact('dataArr'));
     }
 

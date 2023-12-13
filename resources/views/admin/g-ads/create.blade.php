@@ -5,13 +5,13 @@
             <div class="container-fluid">
                   <div class="row mb-2">
                         <div class="col-sm-6">
-                              <h1>Reply Comment</h1>
+                              <h1>Create G-Ads</h1>
                         </div>
                         <div class="col-sm-6">
                               <ol class="breadcrumb float-sm-right">
                                     <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="{{route('admin.blog-comments')}}">Reply Comment</a></li>
-                                    <li class="breadcrumb-item active">Create Reply Comment</li>
+                                    <li class="breadcrumb-item"><a href="{{route('admin.menu')}}">G-Ads</a></li>
+                                    <li class="breadcrumb-item active">Create G-Ads</li>
                               </ol>
                         </div>
                   </div>
@@ -27,29 +27,32 @@
                               <!-- general form elements -->
                               <div class="card card-primary">
                                     <div class="card-header">
-                                          <h3 class="card-title">Reply Comment {{$dataArr->ip_address}}</h3>
+                                          <h3 class="card-title">New G-Ads</h3>
                                     </div>
                                     <!-- /.card-header -->
                   
                                     <!-- form start -->
-                                    <form method="POST" action="{{route('admin.blog-comments.reply', [$dataArr->id])}}">
-                                          <input type="hidden" name="blog_id" value="{{$dataArr->blog_id}}">
+                                    <form method="POST" action="{{route('admin.gads.store')}}">
                                           @csrf
                                           <div class="card-body">
                                                 <div class="row">
-                                                      <div class="col-md-4">
+                                                      <!-- left column -->
+                                                      <div class="col-md-6">
                                                             <div class="form-group">
-                                                                  <label>Viewer Name</label>
-                                                                  <input type="text" class="form-control" value="{{$dataArr->name}}" disabled>
+                                                                  <label for="status">G-Ads Type</label>
+                                                                  <select class="form-control" name="ad_type_id" id="ad_type_id">
+                                                                        @foreach ($dataArr as $ar)
+                                                                              <option value="{{$ar->id}}">{{$ar->name}}</option>
+                                                                        @endforeach
+                                                                  </select>
                                                             </div>
-                                                      </div>
-                                                      <div class="col-md-4">
                                                             <div class="form-group">
-                                                                  <label>Viewer Email</label>
-                                                                  <input type="text" class="form-control" value="{{$dataArr->email}}" disabled>
+                                                                  <label for="name">G-Ad Name</label>
+                                                                  <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" value="" autofocus>
+                                                                  @if($errors->has('name'))
+                                                                        <div class="error">{{ $errors->first('name') }}</div>
+                                                                  @endif
                                                             </div>
-                                                      </div>
-                                                      <div class="col-md-4">
                                                             <div class="form-group">
                                                                   <label for="status">Status</label>
                                                                   <select class="form-control" name="status" id="status">
@@ -58,25 +61,22 @@
                                                                   </select>
                                                             </div>
                                                       </div>
-                                                </div>
-                                                
-                                                <div class="form-group">
-                                                      <label for="comment" class="d-block">Viewer Comment</label>
-                                                      <textarea class="form-control" disabled>{{$dataArr->content}}</textarea>
-                                                </div>
 
-                                                <div class="form-group">
-                                                      <label for="content" class="d-block">Reply</label>
-                                                      <textarea class="form-control" id="content" name="content">{{$replyArr->content ?? ''}}</textarea>
-                                                      @if($errors->has('content'))
-                                                            <div class="error">{{ $errors->first('content') }}</div>
-                                                      @endif
+                                                      <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                  <label for="content">Content</label>
+                                                                  <textarea class="form-control" id="content" name="content" rows="8" placeholder="Ads load Content"></textarea>
+                                                                  @if($errors->has('content'))
+                                                                        <div class="error">{{ $errors->first('content') }}</div>
+                                                                  @endif
+                                                            </div>
+                                                      </div>
                                                 </div>
                                           </div>
                                           <!-- /.card-body -->
 
                                           <div class="card-footer text-center">
-                                                <a href="{{route('admin.blog-comments')}}" class="btn btn-danger"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a>
+                                                <a href="{{route('admin.menu')}}" class="btn btn-danger"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a>
                                                 <button type="submit" class="btn btn-success"><i class="far fa-save" aria-hidden="true"></i> Submit</button>
                                           </div>
                                     </form>

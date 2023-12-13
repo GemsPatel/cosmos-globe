@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Request as FacadesRequest;
 use App\Models\Admin\AdminMenu;
 use App\Models\Admin\BlogComments;
 use App\Models\Admin\Permission;
+use App\Models\GoogleAdvertisement;
 use App\Models\SiteConfig;
 use App\Models\Website;
 use Illuminate\Support\Facades\Auth;
@@ -247,13 +248,14 @@ function getBlogCommentReply( $blog_id ){
 }
 
 /**
- * Here comes a PHP function to format numbers to nearest thousands such as Kilos, Millions, Billions, and Trillions with comma
+ * get random single google advertisement details
  */
-function shortNumber($num) 
-{
-    $units = ['', 'K', 'M', 'B', 'T'];
-    for ($i = 0; $num >= 1000; $i++) {
-        $num /= 1000;
-    }
-    return round($num, 1) . $units[$i];
+function getGoogleSingleAdvertisementDetails( $website_id = 0, $ad_type_id = 1 ){
+    return GoogleAdvertisement::where( [
+        'website_id' => $website_id,
+        'ad_type_id' => $ad_type_id,
+        'status' => 1,
+    ] )
+    ->inRandomOrder()
+    ->first();
 }

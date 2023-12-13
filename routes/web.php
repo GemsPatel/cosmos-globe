@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CmsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
@@ -7,8 +8,6 @@ use App\Http\Controllers\CronController;
 use App\Http\Controllers\GlobleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ScraperController;
-use App\Http\Controllers\Web\CountryController;
-use App\Http\Controllers\Web\BusinessVisaController;
 
 Route::get('/clear', function () {
     Artisan::call('cache:clear');
@@ -19,6 +18,9 @@ Route::get('/clear', function () {
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('category/{slug}', [BlogController::class, 'getCategoryWiseBlogs'])->name('getCategoryWiseBlogs');
+Route::get('{slug?}', [BlogController::class, 'getBlogDetails']);
+
 
 Route::get('generateMaintanance', [CronController::class, 'maintananceInstall']);
 Route::get('generateHome', [CronController::class, 'flatInstall']);

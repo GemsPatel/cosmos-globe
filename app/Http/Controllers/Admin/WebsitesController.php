@@ -115,6 +115,7 @@ class WebsitesController extends Controller
 		$website->footer_logo = $footer_logo;
         $website->is_run_advertisement = $request->is_run_advertisement;
         $website->google_analytics_code = $request->google_analytics_code;
+		$website->google_client_ca_pub_code = $request->google_client_ca_pub_code;
 		$website->google_tag_manager_code = $request->google_tag_manager_code;
         $website->status = $request->status;
         $website->save();
@@ -221,6 +222,7 @@ class WebsitesController extends Controller
         $website->slug = $slug;
         $website->is_run_advertisement = $request->is_run_advertisement;
         $website->google_analytics_code = $request->google_analytics_code;
+		$website->google_client_ca_pub_code = $request->google_client_ca_pub_code;
 		$website->google_tag_manager_code = $request->google_tag_manager_code;
         $website->status = $request->status;
         $website->save();

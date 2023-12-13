@@ -4120,7 +4120,7 @@ ul {
 .main-menu__wrapper-inner {
 	position: relative;
 	display: block;
-	background-color: #f2edeb;
+	background-color: #fff;
 	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
 	z-index: 1;
 }

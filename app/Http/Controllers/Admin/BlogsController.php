@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin\Blogs;
 use App\Models\Admin\BlogTagMaps;
 use App\Models\Admin\Categories;
-use App\Models\Admin\Recommended;
 use App\Models\Admin\Tags;
 use Illuminate\Http\Request;
 use Image;
@@ -111,14 +110,14 @@ class BlogsController extends Controller
         $path = "";
         if ($request->hasFile('image')) {
             $filename = $request->image->getClientOriginalName();
-            // $request->image->storeAs('blog', $filename, 'public' );
+            $request->image->storeAs('blog', $filename, 'public' );
 
-            $image = $request->file('image');
-            $destinationPath = storage_path('/app/public/blog');
-            $img = Image::make($image->path());
-            $img->resize(820, 400, function ($constraint) {
-                //$constraint->aspectRatio();
-            })->save($destinationPath.'/'.$filename);
+            // $image = $request->file('image');
+            // $destinationPath = storage_path('/app/public/blog');
+            // $img = Image::make($image->path());
+            // $img->resize(400, 400, function ($constraint) {
+            //     $constraint->aspectRatio();
+            // })->save($destinationPath.'/'.$filename);
 
 			$path = "public/blog/".$filename;
         }
@@ -153,15 +152,15 @@ class BlogsController extends Controller
             }
         }
 
-         //save blog recommended
-         if( isset( $request->blog_id ) && $request->blog_id != "" ){
-            $rec = new Recommended();
-            $rec->user_id = $user_id;
-            $rec->category_id = $request->category_id;
-            $rec->sub_category_id = $request->sub_category_id;
-            $rec->blog_id = $blog->id;
-            $rec->save();
-        }
+        //save blog recommended
+        // if( isset( $request->blog_id ) && $request->blog_id != "" ){
+        //     $rec = new Recommended();
+        //     $rec->user_id = $user_id;
+        //     $rec->category_id = $request->category_id;
+        //     $rec->sub_category_id = $request->sub_category_id;
+        //     $rec->blog_id = $blog->id;
+        //     $rec->save();
+        // }
 
 		$blog->short_url = _en( $blog->id );
 		$blog->save();

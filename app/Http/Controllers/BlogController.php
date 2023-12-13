@@ -91,7 +91,7 @@ class BlogController extends Controller
         $headerInfo = $this->websiteDetails;
         $search = $request->q;
         $category = Categories::where( 'slug', $slug )->first();
-        $blogArr = Blogs::with('blog_tag_map', 'category', 'author')//, 'sub_category'
+        $blogArr = Blogs::with('category')//, 'sub_category'
                     ->where( [ 
                         'website_id' => $headerInfo->id,
                         'category_id' => $category->id, 
@@ -118,7 +118,7 @@ class BlogController extends Controller
         $meta_description = $category->title;
         $meta_keyword = $category->slug;
 
-        return view('front.'.$this->websiteDetails->slug.'.blog-listing', compact('blogArr', 'recentArr', 'slug', 'action', 'request', 'custom_page_title', 'meta_description', 'meta_keyword', 'active', 'headerInfo' ));
+        return view('front.'.$this->websiteDetails->slug.'.blog-details', compact('blogArr', 'recentArr', 'slug', 'action', 'request', 'custom_page_title', 'meta_description', 'meta_keyword', 'active', 'headerInfo' ));
     }
 
     /**

@@ -8,19 +8,17 @@ use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\ConfigurationController;
 use App\Http\Controllers\Admin\CountryController;
 use App\Http\Controllers\Admin\CustomerController;
-use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\GoogleAdsController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\SubCategoriesController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Auth\AdminAuthController;
 use App\Http\Controllers\Admin\LanguageController;
-use App\Http\Controllers\Admin\MaintananceController;
 use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\RatingCommentController;
 use App\Http\Controllers\Admin\SlidersController;
 use App\Http\Controllers\Admin\TagsController;
 use App\Http\Controllers\Admin\WebsitesController;
-use App\Http\Controllers\Admin\WingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -55,6 +53,7 @@ Route::group(['prefix' => '','middleware' => 'adminAuth'], function () {
 	/**
 	 * Blog Management
 	 */
+
 		Route::group(['prefix' => 'category'], function(){
 			Route::get('/', [CategoriesController::class, 'index'])->name('admin.category');
 			Route::get('/create', [CategoriesController::class, 'create'])->name('admin.category.create');
@@ -153,6 +152,18 @@ Route::group(['prefix' => '','middleware' => 'adminAuth'], function () {
 		});
 
 	/**
+	 * Google Advertise Management
+	 */
+		Route::group(['prefix' => 'gads'], function(){
+			Route::get('/', [GoogleAdsController::class, 'index'])->name('admin.gads');
+			Route::get('/create', [GoogleAdsController::class, 'create'])->name('admin.gads.create');
+			Route::post('/store', [GoogleAdsController::class, 'store'])->name('admin.gads.store');
+			Route::get('/edit/{id}', [GoogleAdsController::class, 'edit'])->name('admin.gads.edit');
+			Route::post('/update/{id}', [GoogleAdsController::class, 'update'])->name('admin.gads.update');
+			Route::delete('/delete/{id}', [GoogleAdsController::class, 'destroy'])->name('admin.gads.delete');
+		});
+
+	/**
 	 * Setting Management
 	 */
 		Route::group(['prefix' => 'menu'], function(){
@@ -214,37 +225,4 @@ Route::group(['prefix' => '','middleware' => 'adminAuth'], function () {
 			Route::post('/update/{id}', [CustomerController::class, 'profileUpdate'])->name('admin.update-profile.update');
 		});
 
-	/**
-	 * Maintanance
-	 */
-		Route::group(['prefix' => 'maintanance'], function(){
-			Route::get('/', [MaintananceController::class, 'index'])->name('admin.maintanance');
-			Route::get('/create', [MaintananceController::class, 'create'])->name('admin.maintanance.create');
-			Route::get('/report-create', [MaintananceController::class, 'reportCreate'])->name('admin.maintanance.report-create');
-			Route::post('/store', [MaintananceController::class, 'store'])->name('admin.maintanance.store');
-			Route::post('/report-store', [MaintananceController::class, 'reportStore'])->name('admin.maintanance.report-store');
-			Route::get('/edit/{id}', [MaintananceController::class, 'edit'])->name('admin.maintanance.edit');
-			// Route::get('/report-view/{id}', [MaintananceController::class, 'reportView'])->name('admin.maintanance.report-view');
-			Route::post('/update/{id}', [MaintananceController::class, 'update'])->name('admin.maintanance.update');
-			Route::delete('/delete/{id}', [MaintananceController::class, 'destroy'])->name('admin.maintanance.delete');
-		});
-
-		Route::group(['prefix' => 'wing'], function(){
-			Route::get('/', [WingController::class, 'index'])->name('admin.wing');
-			Route::get('/create', [WingController::class, 'create'])->name('admin.wing.create');
-			Route::post('/store', [WingController::class, 'store'])->name('admin.wing.store');
-			Route::get('/edit/{id}', [WingController::class, 'edit'])->name('admin.wing.edit');
-			Route::post('/update/{id}', [WingController::class, 'update'])->name('admin.wing.update');
-			Route::delete('/delete/{id}', [WingController::class, 'destroy'])->name('admin.wing.delete');
-		});
-
-		Route::group(['prefix' => 'home'], function(){
-			Route::get('/', [HomeController::class, 'index'])->name('admin.home');
-			Route::get('/create', [HomeController::class, 'create'])->name('admin.home.create');
-			Route::post('/store', [HomeController::class, 'store'])->name('admin.home.store');
-			Route::post('/home-maintanance-store', [HomeController::class, 'storeMaintanance'])->name('admin.home.maintanance.store');
-			Route::get('/edit/{id}', [HomeController::class, 'edit'])->name('admin.home.edit');
-			Route::post('/update/{id}', [HomeController::class, 'update'])->name('admin.home.update');
-			Route::delete('/delete/{id}', [HomeController::class, 'destroy'])->name('admin.home.delete');
-		});
 });

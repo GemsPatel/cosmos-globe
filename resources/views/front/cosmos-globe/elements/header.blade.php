@@ -99,6 +99,6 @@
     </div>
     <!-- /.preloader -->
     <div id="page" class="site page-wrapper">
-    @include('elements.header-menu')
+    @include('front.'.$headerInfo->slug.'.elements.header-menu')
     
    

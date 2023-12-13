@@ -1,4 +1,4 @@
-@include('elements.header')
+@include('front.'.$headerInfo->slug.'.elements.header')
 
 <div data-elementor-type="wp-page" data-elementor-id="14" class="elementor elementor-14">
     <section
@@ -2025,4 +2025,4 @@
     </section>
 </div>
 
-@include('elements.footer')
+@include('front.'.$headerInfo->slug.'.elements.footer')

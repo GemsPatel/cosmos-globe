@@ -21,7 +21,7 @@
                                                         src="{{url('public/uploads/2023/04/logo-dark.png')}}" alt="Treck">
                                                 </a>
                                             </div>
-                                            <div class="main-menu__search-box">
+                                            <div class="main-menu__search-box d-none">
                                                 <a href="#"
                                                     class="main-menu__search search-toggler icon-magnifying-glass"><span>Search...</span></a>
                                             </div>
