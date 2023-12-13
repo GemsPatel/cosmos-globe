@@ -26,72 +26,6 @@
                                                     class="main-menu__search search-toggler icon-magnifying-glass"><span>Search...</span></a>
                                             </div>
                                             <div class="main-menu__wrapper-inner-content">
-                                                {{-- <div class="main-menu__update-box">
-                                                    <div class="main-menu__update-box-inner">
-                                                        <div class="main-menu__update-box-left">
-                                                            <div class="main-menu__update-icon-box">
-                                                                <div class="main-menu__update-icon icon-svg">
-                                                                    <span aria-hidden="true"
-                                                                        class="  icon-megaphone"></span>
-                                                                </div>
-                                                                <div class="main-menu__update-icon-text">
-                                                                    <p>Updates</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="main-menu__update-carousel-box">
-                                                                <div
-                                                                    class="main-menu__update-carousel thm-owl__carousel owl-theme owl-carousel">
-                                                                    <div class="item">
-                                                                        <div class="main-menu__update-single">
-                                                                            <p class="main-menu__update-text">
-                                                                                The United States Mission is
-                                                                                Pleased to Announce the
-                                                                                Expansion of Interview.</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="item">
-                                                                        <div class="main-menu__update-single">
-                                                                            <p class="main-menu__update-text">
-                                                                                The United States Mission is
-                                                                                Pleased to Announce the
-                                                                                Expansion of Interview.</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="item">
-                                                                        <div class="main-menu__update-single">
-                                                                            <p class="main-menu__update-text">
-                                                                                The United States Mission is
-                                                                                Pleased to Announce the
-                                                                                Expansion of Interview.</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="main-menu__update-box-right">
-                                                            <div class="main-menu__social-box">
-                                                                <h4 class="main-menu__social-title">Follow us:
-                                                                </h4>
-                                                                <div class="main-menu__social">
-                                                                    <a href="https://www.facebook.com/">
-                                                                        <i aria-hidden="true"
-                                                                            class="  fab fa-facebook-f"></i>
-                                                                    </a>
-                                                                    <a href="https://www.twitter.com/">
-                                                                        <i aria-hidden="true"
-                                                                            class="  fab fa-twitter"></i> </a>
-                                                                    <a href="https://www.twitter.com/">
-                                                                        <i aria-hidden="true"
-                                                                            class="  fab fa-pinterest-p"></i>
-                                                                    </a>
-                                                                    <a href="https://www.pinterest.com/">
-                                                                        <i aria-hidden="true"
-                                                                            class="  fab fa-instagram"></i> </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div> --}}
                                                 <div class="main-menu__top">
                                                     <div class="main-menu__top-inner">
                                                         <div class="main-menu__top-left">
@@ -153,96 +87,27 @@
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-967">
                                                                         <a href="{{route('home')}}">Home</a>
                                                                     </li>
-                                                                    {{-- <li id="menu-item-965"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-965">
-                                                                        <a href="coaching.html">Coaching</a>
-                                                                        <ul class="sub-menu">
-                                                                            <li id="menu-item-1323"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1323">
-                                                                                <a href="coaching.html">Coaching</a>
-                                                                            </li>
-                                                                            <li id="menu-item-1593"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1593">
-                                                                                <a href="citizenship-test.html">Citizenship
-                                                                                    Test</a>
-                                                                            </li>
-                                                                            <li id="menu-item-1594"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1594">
-                                                                                <a href="ielts-coaching.html">IELTS
-                                                                                    Coaching</a>
-                                                                            </li>
-                                                                            <li id="menu-item-1595"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1595">
-                                                                                <a href="pte-coaching.html">PTE
-                                                                                    Coaching</a>
-                                                                            </li>
-                                                                            <li id="menu-item-1596"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1596">
-                                                                                <a href="tofel-coaching.html">TOFEL
-                                                                                    Coaching</a>
-                                                                            </li>
-                                                                            <li id="menu-item-1597"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1597">
-                                                                                <a href="oet-coaching.html">OET
-                                                                                    Coaching</a>
-                                                                            </li>
-                                                                            <li id="menu-item-1598"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1598">
-                                                                                <a href="sat-coaching.html">SAT
-                                                                                    Coaching</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li> --}}
-                                                                    <li id="menu-item-984"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-984">
-                                                                        <a href="#">Visa</a>
-                                                                        <ul class="sub-menu">
-                                                                            <li id="menu-item-1324"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1324">
-                                                                                <a href="{{ route('businessVisa')}}">Visa</a>
-                                                                            </li>
-                                                                            <li id="menu-item-985"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-985">
-                                                                                <a href="{{ route('businessVisa')}}">Business
-                                                                                    Visa</a>
-                                                                            </li>
-                                                                            <li id="menu-item-1601"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601">
-                                                                                <a href="{{ route('businessVisa')}}">Tourist
-                                                                                    Visa</a>
-                                                                            </li>
-                                                                            {{-- <li id="menu-item-1599"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1599">
-                                                                                <a href="student-visa.html">Student
-                                                                                    Visa</a>
-                                                                            </li> --}}
-                                                                            <li id="menu-item-1602"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602">
-                                                                                <a href="{{ route('businessVisa')}}">Residence
-                                                                                    Visa</a>
-                                                                            </li>
-                                                                            <li id="menu-item-1603"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603">
-                                                                                <a href="{{ route('businessVisa')}}">Employement
-                                                                                    Visa</a>
-                                                                            </li>
-                                                                            <li id="menu-item-1600"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1600">
-                                                                                <a href="{{ route('businessVisa')}}">Transit
-                                                                                    Visa</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li id="menu-item-968"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-968">
-                                                                        <a href="javascript:void(0)">Countries</a>
-                                                                        <ul class="sub-menu">
-                                                                            <li id="menu-item-1607"
-                                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1607">
-                                                                                <a href="{{ route('country.canada')}}">Canada</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
+                                                                    <?php
+                                                                        $menuArr = getFrontEndMenu( $headerInfo->id );
+                                                                    ?>
+                                                                    @foreach ( $menuArr as $k=>$ar )
+                                                                        <li id="menu-item-984"
+                                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-984">
+                                                                            <a href="#">{{$ar->title}}</a>
+                                                                            @if( COUNT( $ar->child ) > 0 )
+                                                                                <ul class="sub-menu">
+                                                                                    @foreach ( $ar->child as $cr )
+                                                                                        <li id="menu-item-1324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1324">
+                                                                                            <a href="{{url('category/'.$cr['slug'])}}" title="{{$cr['title']}}">
+                                                                                                {{$cr['title']}}
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    @endforeach
+                                                                                </ul>
+                                                                            @endif
+                                                                        </li>
+                                                                    @endforeach
+
                                                                     <li id="menu-item-960"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-960">
                                                                         <a href="{{route('aboutUs')}}">About Us</a>
@@ -293,9 +158,6 @@
                             <div class="stricky-header stricked-menu main-menu">
                                 <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
                             </div><!-- /.stricky-header -->
-
-
-
 
                             <div class="mobile-nav__wrapper">
                                 <div class="mobile-nav__overlay mobile-nav__toggler"></div>

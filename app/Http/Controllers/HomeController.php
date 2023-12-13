@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
+    public $websiteDetails = "";
+
     /**
      * Create a new controller instance.
      *
@@ -14,6 +17,7 @@ class HomeController extends Controller
     public function __construct()
     {
         // $this->middleware('auth');
+        $this->websiteDetails = getHeaderInformation();
     }
 
     /**
@@ -23,6 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $headerInfo = $this->websiteDetails;
+        return view('index', compact('headerInfo' ));
     }
 }
