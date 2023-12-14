@@ -28,7 +28,7 @@ Route::get('report/{id}', [CronController::class, 'reportView']);
 
 Route::get('scraper', [ScraperController::class, 'index']);
 
-Route::get('business-visa',[CmsController::class,'businessVisa'])->name('businessVisa');
+// Route::get('business-visa',[CmsController::class,'businessVisa'])->name('businessVisa');
 Route::get('contact-us',[CmsController::class,'contactUs'])->name('contactUs');
 Route::get('about-us',[CmsController::class,'aboutUs'])->name('aboutUs');
 Route::get('gallery',[CmsController::class,'gallery'])->name('gallery');
