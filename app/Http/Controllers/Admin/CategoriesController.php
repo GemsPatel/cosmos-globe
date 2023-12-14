@@ -101,7 +101,7 @@ class CategoriesController extends Controller
             ->select( 'title' )
             ->first();
 
-            $slug = convertStringToSlug( $parentArr->title ).'-'.$slug;
+            // $slug = convertStringToSlug( $parentArr->title ).'-'.$slug;
         }
 
         $path = "";

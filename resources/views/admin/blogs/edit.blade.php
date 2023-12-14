@@ -109,24 +109,40 @@
                                             @endif
                                         </div>
                                         <div class="form-group mb-0">
-                                            <label class="BlogTags-txt">Add Blog Tag </label>
+                                            <label class="bullet-point-txt-1">Add Bullet Points </label>
                                             <div class="row">
-                                                <div class="col-md-10 toggle-btn">
+                                                <?php
+                                                $bulletPoints = json_decode( $dataArr->bullet_points );
+                                                ?>
+                                                <div class="col-md-12 toggle-btn mb-2">
                                                     <div class="position-relative">
-                                                        <input type="text" class="form-control " placeholder="Tag" id="BlogTags-txt" >
-                                                        <ul class="dropdown-menu txt_title_tag p-2 w-100 auto-search-drp" role="menu" aria-labelledby="dropdownMenu"  id="DropdownBlogTags"></ul>
+                                                        <input type="text" class="form-control" placeholder="Bullet Points" id="bullet-point-txt-1" name="bullet_points[]" value="{{$bulletPoints[0] ?? ''}}">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2">
-                                                    <a href="javascript:void(0)" class="btn btn-outline-primary" id="addBlogTag"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                <div class="col-md-12 toggle-btn mb-2">
+                                                    <div class="position-relative">
+                                                        <input type="text" class="form-control" placeholder="Bullet Points" id="bullet-point-txt-2" name="bullet_points[]" value="{{$bulletPoints[1] ?? ''}}">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="pb-0 p-2">
-                                                <div id="blog-tag-store"></div>
+                                                <div class="col-md-12 toggle-btn mb-2">
+                                                    <div class="position-relative">
+                                                        <input type="text" class="form-control" placeholder="Bullet Points" id="bullet-point-txt-3" name="bullet_points[]" value="{{$bulletPoints[2] ?? ''}}">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 toggle-btn mb-2">
+                                                    <div class="position-relative">
+                                                        <input type="text" class="form-control" placeholder="Bullet Points" id="bullet-point-txt-4" name="bullet_points[]" value="{{$bulletPoints[3] ?? ''}}">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 toggle-btn mb-2">
+                                                    <div class="position-relative">
+                                                        <input type="text" class="form-control" placeholder="Bullet Points" id="bullet-point-txt-5" name="bullet_points[]" value="{{$bulletPoints[4] ?? ''}}">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="form-group">
+                                        <div class="form-group d-none">
                                             <label for="title">Recommended Blog</label>
                                             <select name="blog_id" class="form-control blog_id">
                                                 <option value="">Select Recommended Blog.</option>

@@ -28,6 +28,6 @@ class HomeController extends Controller
     public function index()
     {
         $headerInfo = $this->websiteDetails;
-        return view('index', compact('headerInfo' ));
+        return view('front.'.$this->websiteDetails->slug.'.index', compact('headerInfo' ));
     }
 }

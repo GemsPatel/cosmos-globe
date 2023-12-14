@@ -91,19 +91,16 @@ class BlogController extends Controller
         $headerInfo = $this->websiteDetails;
         $search = $request->q;
         $category = Categories::where( 'slug', $slug )->first();
+        
         $blogArr = Blogs::with('category')//, 'sub_category'
                     ->where( [ 
                         'website_id' => $headerInfo->id,
-                        'category_id' => $category->id, 
+                        'sub_category_id' => $category->id, 
                         'status' => 1 
                     ] )
-                    ->when( $search, function ($query, $search) {
-                        return $query->where( 'title',  'LIKE', '%'.$search.'%' )
-                        ->where( 'short_description', 'LIKE', '%'.$search.'%' );
-                    })
-                    ->paginate(15);
+                    ->first();
 
-        $recentArr = Blogs::with('blog_tag_map', 'category', 'author')//, 'sub_category'
+        $recentArr = Blogs::with( 'category' )//, 'sub_category'
                     ->where( [ 
                         'website_id' => $headerInfo->id,
                         'status' => 1 
@@ -118,7 +115,14 @@ class BlogController extends Controller
         $meta_description = $category->title;
         $meta_keyword = $category->slug;
 
-        return view('front.'.$this->websiteDetails->slug.'.blog-details', compact('blogArr', 'recentArr', 'slug', 'action', 'request', 'custom_page_title', 'meta_description', 'meta_keyword', 'active', 'headerInfo' ));
+        $parentArr = Categories::where( [
+            'website_id' => $this->websiteDetails->id,
+            'id' => $category->parent_id
+        ] )
+        ->select( 'slug' )
+        ->first();
+        
+        return view('front.'.$this->websiteDetails->slug.'.'.$parentArr->slug, compact('blogArr', 'recentArr', 'slug', 'action', 'request', 'custom_page_title', 'meta_description', 'meta_keyword', 'active', 'headerInfo' ));
     }
 
     /**

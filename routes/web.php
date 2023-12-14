@@ -19,8 +19,7 @@ Route::get('/clear', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('category/{slug}', [BlogController::class, 'getCategoryWiseBlogs'])->name('getCategoryWiseBlogs');
-Route::get('{slug?}', [BlogController::class, 'getBlogDetails']);
-
+// Route::get('{slug?}', [BlogController::class, 'getBlogDetails']);
 
 Route::get('generateMaintanance', [CronController::class, 'maintananceInstall']);
 Route::get('generateHome', [CronController::class, 'flatInstall']);

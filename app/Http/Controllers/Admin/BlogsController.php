@@ -130,6 +130,7 @@ class BlogsController extends Controller
         $blog->sub_category_id = $request->sub_category_id;
         $blog->website_id = $this->websiteDetails->id;
         $blog->title = $request->title;
+        $blog->bullet_points = json_encode( $request->bullet_points );
         $blog->slug = $slug;
 		$blog->image = $path;
         $blog->short_description = $request->short_description;
@@ -247,18 +248,18 @@ class BlogsController extends Controller
         $blog = Blogs::find($id);
         if ($request->hasFile('image')) {
 			$filename = $request->image->getClientOriginalName();
-            // $request->image->storeAs('blog', $filename, 'public' );
+            $request->image->storeAs('blog', $filename, 'public' );
 
-            $image = $request->file('image');
-            $destinationPath = storage_path('/app/public/blog');
-            $img = Image::make($image->path());
-            $img->resize(820, 400, function ($constraint) {
-                //$constraint->aspectRatio();
-            })->save($destinationPath.'/'.$filename);
-			$blog->image = "public/blog/".$filename;
+            // $image = $request->file('image');
+            // $destinationPath = storage_path('/app/public/blog');
+            // $img = Image::make($image->path());
+            // $img->resize(820, 400, function ($constraint) {
+            //     //$constraint->aspectRatio();
+            // })->save($destinationPath.'/'.$filename);
+			// $blog->image = "public/blog/".$filename;
         }
 
-        $blog->user_id = auth()->guard('admin')->user()->id;
+        // $blog->user_id = auth()->guard('admin')->user()->id;
         $blog->category_id = $request->category_id;
         $blog->sub_category_id = $request->sub_category_id;
         $blog->website_id = $this->websiteDetails->id;
@@ -266,6 +267,7 @@ class BlogsController extends Controller
         //$blog->slug = convertStringToSlug( $request->title );
         $blog->short_description = $request->short_description;
         $blog->description = $request->description;
+        $blog->bullet_points = json_encode( $request->bullet_points );
 		$blog->keyword = $request->keyword;
         $blog->status = $request->status;
         $blog->save();

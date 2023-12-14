@@ -7,42 +7,46 @@ use Illuminate\Http\Request;
 
 class CmsController extends Controller
 {
-    public function businessVisa()
+    public $websiteDetails = "";
+    
+    function __construct()
     {
-
-        return view('web.visa.businessVisa',[
-            'title'=>'Business Visa',
-            'breadcrumb' => array(['title' => 'Business Visa', 'link' => ""])
-        ]);
+        $this->websiteDetails = getHeaderInformation();
     }
+
     public function contactUs()
     {
-        return view('web.CMS.contactUs',[
+        return view('front.'.$this->websiteDetails->slug.'.CMS.contactUs',[
             'title'=>'Contact Us',
-            'breadcrumb' => array(['title' => 'Contact Us', 'link' => ""])
+            'breadcrumb' => array(['title' => 'Contact Us', 'link' => ""]),
+            'headerInfo' => $this->websiteDetails,
         ]);
     }
     public function aboutUs()
     {
-        return view('web.CMS.aboutUs',[
+        $headerInfo = $this->websiteDetails;
+        return view('front.'.$this->websiteDetails->slug.'.CMS.aboutUs',[
             'title'=>'About Us',
-            'breadcrumb' => array(['title' => 'About Us', 'link' => ""])
+            'breadcrumb' => array(['title' => 'About Us', 'link' => ""]),
+            'headerInfo' => $this->websiteDetails,
         ]);
     }
 
     public function gallery()
     {
-        return view('web.CMS.gallery',[
+        return view('front.'.$this->websiteDetails->slug.'.CMS.gallery',[
             'title'=>'Gallery',
-            'breadcrumb' => array(['title' => 'Gallery', 'link' => ""])
+            'breadcrumb' => array(['title' => 'Gallery', 'link' => ""]),
+            'headerInfo' => $this->websiteDetails,
         ]);
     }
 
     public function faqs()
     {
-        return view('web.CMS.faqs',[
+        return view('front.'.$this->websiteDetails->slug.'.CMS.faqs',[
             'title'=>"FAQs",
-            'breadcrumb' => array(['title' => "FAQs", 'link' => ""])
+            'breadcrumb' => array(['title' => "FAQs", 'link' => ""]),
+            'headerInfo' => $this->websiteDetails,
         ]);
     }
 }

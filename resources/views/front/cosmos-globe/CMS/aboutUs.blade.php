@@ -1,4 +1,4 @@
-@include('elements.header')
+@include('front.'.$headerInfo->slug.'.elements.header')
 
 <link rel="stylesheet" href="{{url('public/css/web/aboutus.css')}}">
 
@@ -819,4 +819,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="{{url('public/js/web/aboutus.js')}}"></script>
 
-@include('elements.footer')
+@include('front.'.$headerInfo->slug.'.elements.footer')

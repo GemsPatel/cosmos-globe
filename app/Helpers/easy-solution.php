@@ -259,3 +259,19 @@ function getGoogleSingleAdvertisementDetails( $website_id = 0, $ad_type_id = 1 )
     ->inRandomOrder()
     ->first();
 }
+
+/**
+ * get Left side menus
+ */
+function getLeftSideMenus( $slug ){
+    $parentCat = Categories::where( [
+        'slug' => $slug,
+    ] )
+    ->select( 'id' )
+    ->first();
+
+    return Categories::where( [
+        'parent_id' => $parentCat->id,
+        'status' => 1
+    ] )->get();
+}

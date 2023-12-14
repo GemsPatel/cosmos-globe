@@ -90,6 +90,15 @@ Route::group(['prefix' => '','middleware' => 'adminAuth'], function () {
 			Route::delete('/delete/{id}', [BlogsController::class, 'destroy'])->name('admin.blogs.delete');
 		});
 
+		Route::group(['prefix' => 'cms'], function(){
+			Route::get('/', [BlogsController::class, 'index'])->name('admin.cms');
+			Route::get('/create', [BlogsController::class, 'create'])->name('admin.cms.create');
+			Route::post('/store', [BlogsController::class, 'store'])->name('admin.cms.store');
+			Route::get('/edit/{id}', [BlogsController::class, 'edit'])->name('admin.cms.edit');
+			Route::post('/update/{id}', [BlogsController::class, 'update'])->name('admin.cms.update');
+			Route::delete('/delete/{id}', [BlogsController::class, 'destroy'])->name('admin.cms.delete');
+		});
+
 		Route::group(['prefix' => 'blog-comments'], function(){
 			Route::get('/', [BlogCommentController::class, 'index'])->name('admin.blog-comments');
 			Route::get('/create', [BlogCommentController::class, 'create'])->name('admin.blog-comments.create');
