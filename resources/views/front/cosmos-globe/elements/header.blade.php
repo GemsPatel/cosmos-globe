@@ -50,6 +50,10 @@
         media='all' />
     <link rel='stylesheet' href="{{ url('public/themes/vendors/fontawesome/css/all.min.css') }}" media='all' />
     <link rel='stylesheet' href="{{ url('public/css/cg-style.css') }}" media='all' />
+
+    <link rel="stylesheet" href="{{ url('public/css/web/owl.carousel.css') }}" media='all'>
+    <link rel="stylesheet" href="{{ url('public/css/web/owl.theme.default.css')}}"  media='all'>
+
     <style>
         :root {
             --treck-primary: #f2edeb;
@@ -84,8 +88,11 @@
         }
     </style>
 
+  
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <script src="{{url('public/js/jquery/jquery.min.js')}}"></script>
+
+  
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </head>
 
@@ -93,11 +100,8 @@
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader__image"></div>
-    </div>
-    <!-- /.preloader -->
+   
+    
     <div id="page" class="site page-wrapper">
     @include('front.'.$headerInfo->slug.'.elements.header-menu')
     

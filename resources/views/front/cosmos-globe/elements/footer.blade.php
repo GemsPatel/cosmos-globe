@@ -397,6 +397,29 @@
         <script src="{{url('public/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js')}}" > </script>
         <script src="{{url('public/js/jquery/ui/core.min3f14.js')}}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>   
+        <script src="{{ url('public/js/web/owl.carousel.js')}}"></script>
+        
+        <script>
+ 
+            $('.our-team-carsoule').owlCarousel({
+               loop:true,
+               margin:10,
+               nav:true,
+               dots:true,
+               responsive:{
+                   0:{
+                       items:1
+                   },
+                   600:{
+                       items:3
+                   },
+                   1000:{
+                       items:4
+                   }
+               }
+           })
+           </script>
     </body>
 </html>

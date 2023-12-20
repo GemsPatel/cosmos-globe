@@ -984,52 +984,196 @@
                                         <div class="testimonial-one__bg"
                                             style="background-image: url('public/uploads/2023/04/testimonial-one-bg.png');">
                                         </div>
-                                        <div class="testimonial-one__carousel owl-carousel owl-theme thm-owl__carousel">
-                                            <!--Testimonial one Single Start-->
-                                            <div class="item">
-                                                <div class="testimonial-one__single">
-                                                    <div class="testimonial-one__img-1">
-                                                        <img decoding="async"
-                                                            src="{{url('public/uploads/2023/04/testimonial-one-img-1.png')}}"
-                                                            alt="alt" title="testimonial-one-img-1">
-                                                        <div class="testimonial-one__shape-1">
+                                        <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <!--Testimonial one Single Start-->
+                                                <div class="carousel-item active">
+                                                    <div class="testimonial-one__single">
+                                                        <div class="testimonial-one__img-1">
                                                             <img decoding="async"
-                                                                src="{{url('public/uploads/2023/04/testimonial-one-shape-1.png')}}"
-                                                                alt="alt" title="testimonial-one-shape-1">
-                                                        </div>
-                                                    </div>
-                                                    <div class="testimonial-one__inner">
-                                                        <div class="testimonial-one__icon-and-ratting">
-                                                            <div class="testimonial-one__icon">
+                                                                src="{{url('public/uploads/2023/04/testimonial-one-img-1.png')}}"
+                                                                alt="alt" title="testimonial-one-img-1">
+                                                            <div class="testimonial-one__shape-1">
                                                                 <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/testimonial-one-chatting-icon.png')}}"
-                                                                    alt="alt"
-                                                                    title="testimonial-one-chatting-icon">
-                                                            </div>
-                                                            <div class="testimonial-one__ratting">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
+                                                                    src="{{url('public/uploads/2023/04/testimonial-one-shape-1.png')}}"
+                                                                    alt="alt" title="testimonial-one-shape-1">
                                                             </div>
                                                         </div>
-                                                        <p class="testimonial-one__text">Thank you for making
-                                                            the process of getting a Canada visa so easy. Your
-                                                            phone and email response was prompt and courteous. I
-                                                            received my passport with the visa one day earlier
-                                                            than I had anticipated.
-                                                        </p>
-                                                        <div class="testimonial-one__client-name-box">
-                                                            <h4 class="testimonial-one__client-name">Michale
-                                                                Albert</h4>
-                                                            <p class="testimonial-one__client-sub-title">Happy
-                                                                Customer</p>
+                                                        <div class="testimonial-one__inner">
+                                                            <div class="testimonial-one__icon-and-ratting">
+                                                                <div class="testimonial-one__icon">
+                                                                    <img decoding="async"
+                                                                        src="{{url('public/uploads/2023/04/testimonial-one-chatting-icon.png')}}"
+                                                                        alt="alt"
+                                                                        title="testimonial-one-chatting-icon">
+                                                                </div>
+                                                                <div class="testimonial-one__ratting">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <p class="testimonial-one__text">Thank you for making
+                                                                the process of getting a Canada visa so easy. Your
+                                                                phone and email response was prompt and courteous. I
+                                                                received my passport with the visa one day earlier
+                                                                than I had anticipated.
+                                                            </p>
+                                                            <div class="testimonial-one__client-name-box">
+                                                                <h4 class="testimonial-one__client-name">Michale
+                                                                    Albert</h4>
+                                                                <p class="testimonial-one__client-sub-title">Happy
+                                                                    Customer</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!--Testimonial one Single End-->
+                                                <!--Testimonial one Single End-->
+                                                <!--Testimonial one Single Start-->
+                                                <div class="carousel-item">
+                                                    <div class="testimonial-one__single">
+                                                        <div class="testimonial-one__img-1">
+                                                            <img decoding="async"
+                                                                src="public/uploads/2023/04/testimonial-one-img-2.png"
+                                                                alt="alt" title="testimonial-one-img-2">
+                                                            <div class="testimonial-one__shape-1">
+                                                                <img decoding="async"
+                                                                    src="public/uploads/2023/04/testimonial-one-shape-1.png"
+                                                                    alt="alt" title="testimonial-one-shape-1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="testimonial-one__inner">
+                                                            <div class="testimonial-one__icon-and-ratting">
+                                                                <div class="testimonial-one__icon">
+                                                                    <img decoding="async"
+                                                                        src="public/uploads/2023/04/testimonial-one-chatting-icon.png"
+                                                                        alt="alt"
+                                                                        title="testimonial-one-chatting-icon">
+                                                                </div>
+                                                                <div class="testimonial-one__ratting">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <p class="testimonial-one__text testimonial-one__text">
+                                                                Thank you for making the process of getting a Canada
+                                                                visa so easy. Your phone and email response was
+                                                                prompt and courteous. I received my passport with
+                                                                the visa one day earlier than I had anticipated.
+                                                            </p>
+                                                            <div class="testimonial-one__client-name-box">
+                                                                <h4
+                                                                    class="testimonial-one__client-name testimonial-one__client-name">
+                                                                    Jessica Brown</h4>
+                                                                <p
+                                                                    class="testimonial-one__client-sub-title testimonial-one__client-sub-title">
+                                                                    Happy Customer</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Testimonial one Single End-->
+                                                <!--Testimonial one Single Start-->
+                                                <div class="carousel-item">
+                                                    <div class="testimonial-one__single">
+                                                        <div class="testimonial-one__img-1">
+                                                            <img decoding="async"
+                                                                src="public/uploads/2023/04/testimonial-one-img-3.png"
+                                                                alt="alt" title="testimonial-one-img-3">
+                                                            <div class="testimonial-one__shape-1">
+                                                                <img decoding="async"
+                                                                    src="public/uploads/2023/04/testimonial-one-shape-1.png"
+                                                                    alt="alt" title="testimonial-one-shape-1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="testimonial-one__inner">
+                                                            <div class="testimonial-one__icon-and-ratting">
+                                                                <div class="testimonial-one__icon">
+                                                                    <img decoding="async"
+                                                                        src="public/uploads/2023/04/testimonial-one-chatting-icon.png"
+                                                                        alt="alt"
+                                                                        title="testimonial-one-chatting-icon">
+                                                                </div>
+                                                                <div class="testimonial-one__ratting">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <p
+                                                                class="testimonial-one__text testimonial-one__text testimonial-one__text">
+                                                                Thank you for making the process of getting a Canada
+                                                                visa so easy. Your phone and email response was
+                                                                prompt and courteous. I received my passport with
+                                                                the visa one day earlier than I had anticipated.
+                                                            </p>
+                                                            <div class="testimonial-one__client-name-box">
+                                                                <h4
+                                                                    class="testimonial-one__client-name testimonial-one__client-name testimonial-one__client-name">
+                                                                    Sarah Albert</h4>
+                                                                <p
+                                                                    class="testimonial-one__client-sub-title testimonial-one__client-sub-title testimonial-one__client-sub-title">
+                                                                    Happy Customer</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Testimonial one Single End-->
+                                                <!--Testimonial one Single Start-->
+                                                <div class="carousel-item">
+                                                    <div class="testimonial-one__single">
+                                                        <div class="testimonial-one__img-1">
+                                                            <img decoding="async"
+                                                                src="public/uploads/2023/04/testimonial-one-img-4.png"
+                                                                alt="alt" title="testimonial-one-img-4">
+                                                            <div class="testimonial-one__shape-1">
+                                                                <img decoding="async"
+                                                                    src="public/uploads/2023/04/testimonial-one-shape-1.png"
+                                                                    alt="alt" title="testimonial-one-shape-1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="testimonial-one__inner">
+                                                            <div class="testimonial-one__icon-and-ratting">
+                                                                <div class="testimonial-one__icon">
+                                                                    <img decoding="async"
+                                                                        src="public/uploads/2023/04/testimonial-one-chatting-icon.png"
+                                                                        alt="alt"
+                                                                        title="testimonial-one-chatting-icon">
+                                                                </div>
+                                                                <div class="testimonial-one__ratting">
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                            <p
+                                                                class="testimonial-one__text testimonial-one__text testimonial-one__text testimonial-one__text">
+                                                                Thank you for making the process of getting a Canada
+                                                                visa so easy. Your phone and email response was
+                                                                prompt and courteous. I received my passport with
+                                                                the visa one day earlier than I had anticipated.
+                                                            </p>
+                                                            <div class="testimonial-one__client-name-box">
+                                                                <h4
+                                                                    class="testimonial-one__client-name testimonial-one__client-name testimonial-one__client-name testimonial-one__client-name">
+                                                                    Christine Eve</h4>
+                                                                <p
+                                                                    class="testimonial-one__client-sub-title testimonial-one__client-sub-title testimonial-one__client-sub-title testimonial-one__client-sub-title">
+                                                                    Happy Customer</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!--Testimonial one Single End-->
                                         </div>
                                     </div>
                                 </div>
@@ -1251,10 +1395,8 @@
                                         </h2>
                                     </div>
 
-                                    <div class="row">
-                                        <!--Team One Single Start-->
-                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                            data-wow-delay="100ms">
+                                    <div class="owl-carousel our-team-carsoule owl-theme">
+                                        <div class="item">
                                             <div class="team-one__single">
                                                 <div class="team-one__img-box">
                                                     <div class="team-one__img">
@@ -1291,51 +1433,45 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--Team One Single End-->
-                                        <!--Team One Single Start-->
-                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                            data-wow-delay="200ms">
+                                        <div class="item">
                                             <div class="team-one__single">
-                                                <div class="team-one__img-box">
-                                                    <div class="team-one__img">
-                                                        <img decoding="async"
-                                                            src="{{url('public/uploads/2023/04/team-1-2.jpg')}}" alt="alt"
-                                                            title="team-1-2">
-                                                    </div>
-                                                    <div class="team-one__share-btn">
-                                                        <a href="team-details/index.html"><i
-                                                                class="fa fa-share-alt"></i></a>
-                                                    </div>
-                                                    <ul class="list-unstyled team-one__social">
-                                                        <li><a href="https://www.facebook.com/"><i
-                                                                    class="fab fa-facebook"></i></a></li>
-                                                        <li><a href="https://www.twitter.com/"><i
-                                                                    class="fab fa-twitter"></i></a></li>
-                                                        <li><a href="https://www.pinterest.com/"><i
-                                                                    class="fab fa-pinterest-p"></i></a></li>
-                                                        <li><a href="https://www.instagram.com/"><i
-                                                                    class="fab fa-instagram"></i></a></li>
-                                                    </ul>
+                                            <div class="team-one__img-box">
+                                                <div class="team-one__img">
+                                                    <img decoding="async"
+                                                        src="{{url('public/uploads/2023/04/team-1-2.jpg')}}" alt="alt"
+                                                        title="team-1-2">
                                                 </div>
-                                                <div class="team-one__content">
-                                                    <p class="team-one__sub-title team-one__sub-title">
-                                                        Consultants</p>
-                                                    <h3 class="team-one__title">
-                                                        <a class=" " href="team-details/index.html">Jessica
-                                                            Brown</a>
-                                                    </h3>
-                                                    <div class="team-one__arrow-box">
-                                                        <a href="team-details/index.html"
-                                                            class="team-one__arrow"><i
-                                                                class="fa fa-angle-right"></i></a>
-                                                    </div>
+                                                <div class="team-one__share-btn">
+                                                    <a href="team-details/index.html"><i
+                                                            class="fa fa-share-alt"></i></a>
+                                                </div>
+                                                <ul class="list-unstyled team-one__social">
+                                                    <li><a href="https://www.facebook.com/"><i
+                                                                class="fab fa-facebook"></i></a></li>
+                                                    <li><a href="https://www.twitter.com/"><i
+                                                                class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="https://www.pinterest.com/"><i
+                                                                class="fab fa-pinterest-p"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/"><i
+                                                                class="fab fa-instagram"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="team-one__content">
+                                                <p class="team-one__sub-title team-one__sub-title">
+                                                    Consultants</p>
+                                                <h3 class="team-one__title">
+                                                    <a class=" " href="team-details/index.html">Jessica
+                                                        Brown</a>
+                                                </h3>
+                                                <div class="team-one__arrow-box">
+                                                    <a href="team-details/index.html"
+                                                        class="team-one__arrow"><i
+                                                            class="fa fa-angle-right"></i></a>
                                                 </div>
                                             </div>
+                                            </div>
                                         </div>
-                                        <!--Team One Single End-->
-                                        <!--Team One Single Start-->
-                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                            data-wow-delay="300ms">
+                                        <div class="item">
                                             <div class="team-one__single">
                                                 <div class="team-one__img-box">
                                                     <div class="team-one__img">
@@ -1374,10 +1510,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--Team One Single End-->
-                                        <!--Team One Single Start-->
-                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                            data-wow-delay="400ms">
+                                        <div class="item">
                                             <div class="team-one__single">
                                                 <div class="team-one__img-box">
                                                     <div class="team-one__img">
@@ -1416,9 +1549,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--Team One Single End-->
-
+                                        
                                     </div>
+                                
+                                             
+                                            
+                                              
+                                
                                 </div>
                             </section>
                             <!--Team One End-->
@@ -2025,4 +2162,7 @@
     </section>
 </div>
 
+
+
 @include('front.'.$headerInfo->slug.'.elements.footer')
+
