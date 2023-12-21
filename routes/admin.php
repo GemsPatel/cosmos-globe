@@ -18,6 +18,7 @@ use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\RatingCommentController;
 use App\Http\Controllers\Admin\SlidersController;
 use App\Http\Controllers\Admin\TagsController;
+use App\Http\Controllers\Admin\TestimonialsController;
 use App\Http\Controllers\Admin\WebsitesController;
 use Illuminate\Support\Facades\Route;
 
@@ -234,4 +235,15 @@ Route::group(['prefix' => '','middleware' => 'adminAuth'], function () {
 			Route::post('/update/{id}', [CustomerController::class, 'profileUpdate'])->name('admin.update-profile.update');
 		});
 
+	/**
+	 * Carousal Management
+	 */
+		Route::group(['prefix' => 'testimonials'], function(){
+			Route::get('/', [TestimonialsController::class, 'index'])->name('admin.testimonials');
+			Route::get('/create', [TestimonialsController::class, 'create'])->name('admin.testimonials.create');
+			Route::post('/store', [TestimonialsController::class, 'store'])->name('admin.testimonials.store');
+			Route::get('/edit/{id}', [TestimonialsController::class, 'edit'])->name('admin.testimonials.edit');
+			Route::post('/update/{id}', [TestimonialsController::class, 'update'])->name('admin.testimonials.update');
+			Route::delete('/delete/{id}', [TestimonialsController::class, 'destroy'])->name('admin.testimonials.delete');
+		});
 });
