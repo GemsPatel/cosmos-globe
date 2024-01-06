@@ -53,6 +53,28 @@ function getFrontEndMenu( $website_id = 1){
     return $menuArr;
 }
 
+function getFrontEndFooterMenu( $website_id = 1, $slug='' ){
+
+    $menuArr = [];
+    $parentArr = Categories::where( [
+        'website_id' => $website_id,
+        'slug' => $slug, 
+        'status' => 1 
+    ] )
+    ->get();
+
+    foreach( $parentArr as $k=>$ar ){
+        $menuArr[$k] = $ar;
+        $menuArr[$k]['child'] = Categories::where( [
+            'website_id' => $website_id,
+            'parent_id' =>$ar->id, 
+            'status' => 1 
+        ] )->get();
+    }
+
+    return $menuArr;
+}
+
 /**
  *
  */

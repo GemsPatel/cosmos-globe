@@ -12,4 +12,8 @@ class Sliders extends Model
     public function category(){
         return $this->hasOne( Categories::class, 'id', 'category_id' );
     }
+
+    public function sliderType(){
+        return $this->hasOne( SliderTypes::class, 'id', 'slider_type_id' );
+    }
 }

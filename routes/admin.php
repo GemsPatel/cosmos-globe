@@ -16,9 +16,8 @@ use App\Http\Controllers\Auth\AdminAuthController;
 use App\Http\Controllers\Admin\LanguageController;
 use App\Http\Controllers\Admin\NotificationController;
 use App\Http\Controllers\Admin\RatingCommentController;
-use App\Http\Controllers\Admin\SlidersController;
 use App\Http\Controllers\Admin\TagsController;
-use App\Http\Controllers\Admin\TestimonialsController;
+use App\Http\Controllers\Admin\SlidersController;
 use App\Http\Controllers\Admin\WebsitesController;
 use Illuminate\Support\Facades\Route;
 
@@ -108,15 +107,6 @@ Route::group(['prefix' => '','middleware' => 'adminAuth'], function () {
 			Route::post('/update/{id}', [BlogCommentController::class, 'update'])->name('admin.blog-comments.update');
 			Route::post('/reply/{id}', [BlogCommentController::class, 'reply'])->name('admin.blog-comments.reply');
 			Route::delete('/delete/{id}', [BlogCommentController::class, 'destroy'])->name('admin.blog-comments.delete');
-		});
-
-		Route::group(['prefix' => 'sliders'], function(){
-			Route::get('/', [SlidersController::class, 'index'])->name('admin.sliders');
-			Route::get('/create', [SlidersController::class, 'create'])->name('admin.sliders.create');
-			Route::post('/store', [SlidersController::class, 'store'])->name('admin.sliders.store');
-			Route::get('/edit/{id}', [SlidersController::class, 'edit'])->name('admin.sliders.edit');
-			Route::post('/update/{id}', [SlidersController::class, 'update'])->name('admin.sliders.update');
-			Route::delete('/delete/{id}', [SlidersController::class, 'destroy'])->name('admin.sliders.delete');
 		});
 
 	/**
@@ -238,12 +228,21 @@ Route::group(['prefix' => '','middleware' => 'adminAuth'], function () {
 	/**
 	 * Carousal Management
 	 */
-		Route::group(['prefix' => 'testimonials'], function(){
-			Route::get('/', [TestimonialsController::class, 'index'])->name('admin.testimonials');
-			Route::get('/create', [TestimonialsController::class, 'create'])->name('admin.testimonials.create');
-			Route::post('/store', [TestimonialsController::class, 'store'])->name('admin.testimonials.store');
-			Route::get('/edit/{id}', [TestimonialsController::class, 'edit'])->name('admin.testimonials.edit');
-			Route::post('/update/{id}', [TestimonialsController::class, 'update'])->name('admin.testimonials.update');
-			Route::delete('/delete/{id}', [TestimonialsController::class, 'destroy'])->name('admin.testimonials.delete');
+		Route::group(['prefix' => 'slider-types'], function(){
+			Route::get('/', [SlidersController::class, 'indexType'])->name('admin.slider-types');
+			Route::get('/create', [SlidersController::class, 'createType'])->name('admin.slider-types.create');
+			Route::post('/store', [SlidersController::class, 'storeType'])->name('admin.slider-types.store');
+			Route::get('/edit/{id}', [SlidersController::class, 'editType'])->name('admin.slider-types.edit');
+			Route::post('/update/{id}', [SlidersController::class, 'updateType'])->name('admin.slider-types.update');
+			Route::delete('/delete/{id}', [SlidersController::class, 'destroyType'])->name('admin.slider-types.delete');
+		});
+		
+		Route::group(['prefix' => 'sliders'], function(){
+			Route::get('/', [SlidersController::class, 'index'])->name('admin.sliders');
+			Route::get('/create', [SlidersController::class, 'create'])->name('admin.sliders.create');
+			Route::post('/store', [SlidersController::class, 'store'])->name('admin.sliders.store');
+			Route::get('/edit/{id}', [SlidersController::class, 'edit'])->name('admin.sliders.edit');
+			Route::post('/update/{id}', [SlidersController::class, 'update'])->name('admin.sliders.update');
+			Route::delete('/delete/{id}', [SlidersController::class, 'destroy'])->name('admin.sliders.delete');
 		});
 });

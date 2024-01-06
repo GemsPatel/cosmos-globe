@@ -35,6 +35,21 @@
                   
                                           <div class="card-body">
                                                 <div class="form-group">
+                                                      <label for="slider_type_id">Slider Type</label>
+                                                      <select class="form-control slider_type_id" id="slider_type_id" name="slider_type_id">
+                                                            <option value="">Select Type</option>
+                                                            @forelse( $sliderTypeArr as $ar)
+                                                                  <option value="{{$ar->id}}">{{$ar->title}}</option>
+                                                            @empty
+                                                                  <option value="">No Result Found</option>
+                                                            @endforelse
+                                                      </select>
+                                                      @if($errors->has('slider_type_id'))
+                                                            <div class="error">{{ $errors->first('slider_type_id') }}</div>
+                                                      @endif
+                                                </div>
+
+                                                <div class="form-group">
                                                       <label for="category_id">Category Name</label>
                                                       <select class="form-control category_id" id="category_id" name="category_id">
                                                             <option value="">Select Category</option>

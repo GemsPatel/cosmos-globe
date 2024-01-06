@@ -6,11 +6,14 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin\Blogs;
 use App\Models\Admin\Categories;
 use App\Models\Admin\Sliders;
+use App\Models\Admin\SliderTypes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class SlidersController extends Controller
 {
+    public $websiteDetails = "";
+
     /**
      * @Function:        <__construct>
      * @Author:          Gautam Kakadiya( ShreeGurave Dev Team )
@@ -22,6 +25,7 @@ class SlidersController extends Controller
      */
     public function __construct()
     {
+        $this->websiteDetails = getHeaderInformation();
         // $this->middleware('admin');
     }
 
@@ -37,8 +41,16 @@ class SlidersController extends Controller
      */
     public function index()
     {
-        $dataArr = Sliders::with('category')->get();
+        $headerInfo = $this->websiteDetails;
+        $dataArr = Sliders::with('category', 'sliderType')->where( 'website_id', $headerInfo->id )->get();
         return view('admin.sliders.index', compact('dataArr'));
+    }
+
+    public function indexType()
+    {
+        $headerInfo = $this->websiteDetails;
+        $dataArr = SliderTypes::where( 'website_id', $headerInfo->id )->get();
+        return view('admin.slider-types.index', compact('dataArr'));
     }
 
     /**
@@ -52,8 +64,14 @@ class SlidersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(){
-        $categoryArr = Categories::where( ['status' => 1, 'parent_id' => 0 ] )->get();
-        return view('admin.sliders.create', compact('categoryArr') );
+        $headerInfo = $this->websiteDetails;
+        $categoryArr = Categories::where( ['status' => 1, 'parent_id' => 0, 'website_id' => $headerInfo->id ] )->get();
+        $sliderTypeArr = SliderTypes::where( ['status' => 1, 'website_id' => $headerInfo->id ] )->get();
+        return view('admin.sliders.create', compact('categoryArr', 'sliderTypeArr') );
+    }
+
+    public function createType(){
+        return view('admin.slider-types.create' );
     }
 
     /**
@@ -71,10 +89,12 @@ class SlidersController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|min:1|max:64',
-            'category_id' => 'required',
+            'slider_type_id' => 'required',
+            // 'category_id' => 'required',
             'short_description' => 'required',
         ]);
 
+        $headerInfo = $this->websiteDetails;
         $path = "";
         if ($request->hasFile('image')) {
             $path = $request->file('image')->store('public/slider');
@@ -82,7 +102,9 @@ class SlidersController extends Controller
 
         $slider = new Sliders();
         $slider->user_id = auth()->guard('admin')->user()->id;
+        $slider->slider_type_id = $request->slider_type_id;
         $slider->category_id = $request->category_id;
+        $slider->website_id = $headerInfo->id;
         $slider->title = $request->title;
         $slider->slug = convertStringToSlug( $request->title );
         $slider->image = $path;
@@ -92,6 +114,26 @@ class SlidersController extends Controller
 
         $request->session()->flash('message', 'Slider successfully created');
         return redirect()->route('admin.sliders'); 
+    }
+
+    public function storeType(Request $request)
+    {
+        $validatedData = $request->validate([
+            'title' => 'required|min:1|max:64'
+        ]);
+
+        $headerInfo = $this->websiteDetails;
+
+        $slider = new SliderTypes();
+        $slider->user_id = auth()->guard('admin')->user()->id;
+        $slider->website_id = $headerInfo->id;
+        $slider->title = $request->title;
+        $slider->slug = convertStringToSlug( $request->title );
+        $slider->status = $request->status;
+        $slider->save();
+
+        $request->session()->flash('message', 'Slider Type successfully created');
+        return redirect()->route('admin.slider-types'); 
     }
 
     /**
@@ -123,9 +165,16 @@ class SlidersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit( $id ){
+        $headerInfo = $this->websiteDetails;
         $dataArr = Sliders::find($id);
-        $categoryArr = Categories::where( ['status' => 1, 'parent_id' => 0 ] )->get();
-        return view('admin.sliders.edit', compact( 'dataArr', 'categoryArr'));
+        $categoryArr = Categories::where( ['status' => 1, 'parent_id' => 0, 'website_id' => $headerInfo->id ] )->get();
+        $sliderTypeArr = SliderTypes::where( ['status' => 1, 'website_id' => $headerInfo->id ] )->get();
+        return view('admin.sliders.edit', compact( 'dataArr', 'categoryArr', 'sliderTypeArr'));
+    }
+
+    public function editType( $id ){
+        $dataArr = SliderTypes::find($id);
+        return view('admin.slider-types.edit', compact( 'dataArr' ));
     }
 
     /**
@@ -144,7 +193,8 @@ class SlidersController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|min:1|max:64',
-            'category_id' => 'required',
+            'slider_type_id' => 'required',
+            // 'category_id' => 'required',
             'short_description' => 'required',
         ]);
 
@@ -155,6 +205,7 @@ class SlidersController extends Controller
 
         $slider->user_id = auth()->guard('admin')->user()->id;
         $slider->category_id = $request->category_id;
+        $slider->slider_type_id = $request->slider_type_id;
         $slider->title = $request->title;
         $slider->slug = convertStringToSlug( $request->title );
         $slider->short_description = $request->short_description;
@@ -163,6 +214,26 @@ class SlidersController extends Controller
         
         $request->session()->flash('message', 'Blog successfully updated');
         return redirect()->route('admin.blogs'); 
+    }
+
+    public function updateType(Request $request, $id)
+    {
+        $validatedData = $request->validate([
+            'title' => 'required|min:1|max:64',
+        ]);
+
+        $headerInfo = $this->websiteDetails;
+        $slider = SliderTypes::find($id);
+        $slider->user_id = auth()->guard('admin')->user()->id;
+        $slider->website_id = $headerInfo->id;
+        $slider->title = $request->title;
+        $slider->slug = convertStringToSlug( $request->title );
+        $slider->short_description = $request->short_description;
+        $slider->status = $request->status;
+        $slider->save();
+        
+        $request->session()->flash('message', 'Slider Type successfully updated');
+        return redirect()->route('admin.slider-types'); 
     }
 
     /**
@@ -178,11 +249,21 @@ class SlidersController extends Controller
      */
     public function destroy($id)
     {
-        $del = Blogs::find($id);
+        $del = Sliders::find($id);
         if($del){
             $del->delete();
         }
 
-        return response()->json( ['data' => ['message' => 'Blog successfully deleted.' ] ], 200);
+        return response()->json( ['data' => ['message' => 'Slider successfully deleted.' ] ], 200);
+    }
+
+    public function destroyType($id)
+    {
+        $del = SliderTypes::find($id);
+        if($del){
+            $del->delete();
+        }
+
+        return response()->json( ['data' => ['message' => 'Slider Type successfully deleted.' ] ], 200);
     }
 }

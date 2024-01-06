@@ -6,12 +6,12 @@
             <div class="container-fluid">
                   <div class="row mb-2">
                       <div class="col-sm-6">
-                              <h1>Slider Listing</h1>
+                              <h1>Slider Type Listing</h1>
                         </div>
                         <div class="col-sm-6">
                               <ol class="breadcrumb float-sm-right">
                                     <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                                    <li class="breadcrumb-item active">Slider</li>
+                                    <li class="breadcrumb-item active">Slider Type</li>
                               </ol>
                         </div>
                   </div>
@@ -37,28 +37,24 @@
                         <div class="col-md-12">
                               <div class="card">
                                     <div class="card-header text-right">
-                                          <a href="{{route('admin.sliders.create')}}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Add Slider</a>
+                                          <a href="{{route('admin.slider-types.create')}}" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Add Slider Type</a>
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body table-responsive">
-                                          <table id="role" class="table table-bordered table-striped">
+                                          <table id="slider-types" class="table table-bordered table-striped">
                                                 <thead>
                                                       <tr>
                                                             <th>#</th>
                                                             <th>Type</th>
-                                                            <th>Title</th>
-                                                            <th>Category Name</th>
                                                             <th>Status</th>
                                                             <th>Action</th>
                                                       </tr>
                                                 </thead>
                                                 <tbody>
                                                       @forelse ($dataArr as $ar)
-                                                            <tr id="row_{{$ar->id}}" class="role_row">
+                                                            <tr id="row_{{$ar->id}}" class="slider_row-types">
                                                                   <td>{{ $ar->id }}</td>
-                                                                  <td>{{ $ar->slider_type->title }}</td>
                                                                   <td>{{ $ar->title }}</td>
-                                                                  <td>{{ $ar->category->title }}</td>
                                                                   <td>
                                                                         @if( $ar->status == 0 )
                                                                               <span class="badge badge-pill badge-warning"> Disabled </span>
@@ -77,23 +73,21 @@
                                                                               {{-- <form action="{{ route('admin.sliders.delete', [$ar->id] ) }}" method="POST">
                                                                                     @method('DELETE')
                                                                                     @csrf --}}
-                                                                                    <button class="btn btn-danger btn-size p-0 d-flex align-items-center justify-content-center delete-record" data-id="{{$ar->id}}" data-title="{{ $ar->title }}" data-segment="role"><i class="fa fa-trash fa-sm" aria-hidden="true"></i></button>
+                                                                                    <button class="btn btn-danger btn-size p-0 d-flex align-items-center justify-content-center delete-record" data-id="{{$ar->id}}" data-title="{{ $ar->title }}" data-segment="slider-types"><i class="fa fa-trash fa-sm" aria-hidden="true"></i></button>
                                                                               {{-- </form> --}}
                                                                         </div>
                                                                   </td>
                                                             </tr>
                                                       @empty
                                                             <tr class="text-center">
-                                                                  <td colspan="6">There is no slider available.</td>
+                                                                  <td colspan="4">There is no type available.</td>
                                                             </tr>
                                                       @endforelse
                                                 </tbody>
                                                 <tfoot  class="d-none">
                                                       <tr>
                                                             <th>#</th>
-                                                            <th>Type</th>
                                                             <th>Title</th>
-                                                            <th>Category Name</th>
                                                             <th>Status</th>
                                                             <th>Action</th>
                                                       </tr>
@@ -120,8 +114,8 @@
                   "responsive": true, "lengthChange": false, "autoWidth": true,
                   // "buttons": ["csv", "excel", "pdf"]
                   //     "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-            }).buttons().container().appendTo('#sliders_wrapper .col-md-6:eq(0)');
-            setSearchPaginationPlace( "#slider_wrapper" );
+            }).buttons().container().appendTo('#slider_types_wrapper .col-md-6:eq(0)');
+            setSearchPaginationPlace( "#slider_types_wrapper" );
       });
 </script>
 @include('admin.elements.footer')

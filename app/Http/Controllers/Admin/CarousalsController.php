@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Testimonials;
+use App\Models\Carousals;
 use Illuminate\Http\Request;
 
-class TestimonialsController extends Controller
+class CarousalsController extends Controller
 {
     public $websiteDetails = "";
     /**
@@ -36,7 +36,7 @@ class TestimonialsController extends Controller
      */
     public function index()
     {
-        return view('admin.testimonials.index', [ 'dataArr' => Testimonials::where( ['website_id' => $this->websiteDetails->id ] )->get() ]);
+        return view('admin.carousals.index', [ 'dataArr' => Carousals::where( ['website_id' => $this->websiteDetails->id ] )->get() ]);
     }
 
     /**
@@ -50,7 +50,7 @@ class TestimonialsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(){
-        return view('admin.testimonials.create', [ ] );
+        return view('admin.carousals.create', [ ] );
     }
 
     /**
@@ -74,13 +74,13 @@ class TestimonialsController extends Controller
 
         ]);
 
-        $data = new Testimonials();
+        $data = new Carousals();
 
         $path = "";
         if ($request->hasFile('image')) {
             $filename = $request->image->getClientOriginalName();
-            $request->image->storeAs('testimonials', $filename, 'public' );
-			$path = "public/testimonials/".$filename;
+            $request->image->storeAs('Carousals', $filename, 'public' );
+			$path = "public/Carousals/".$filename;
         }
 
         $user_id = auth()->guard('admin')->user()->id;
@@ -94,8 +94,8 @@ class TestimonialsController extends Controller
         $data->status = $request->status;
         $data->save();
 
-        $request->session()->flash('message', 'Testimonials successfully created.');
-        return redirect()->route('admin.testimonials'); 
+        $request->session()->flash('message', 'Carousals successfully created.');
+        return redirect()->route('admin.Carousals'); 
     }
 
     /**
@@ -111,7 +111,7 @@ class TestimonialsController extends Controller
      */
     public function show($id)
     {
-        return view('admin.testimonials.show', [ ]);
+        return view('admin.carousals.show', [ ]);
     }
 
     /**
@@ -126,7 +126,7 @@ class TestimonialsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit( $id ){
-        return view('admin.testimonials.edit',['dataArr'  => Testimonials::find($id) ]);
+        return view('admin.carousals.edit',['dataArr'  => Carousals::find($id) ]);
     }
 
     /**
@@ -151,10 +151,10 @@ class TestimonialsController extends Controller
             // 'description' => 'required',
         ]);
 
-        $data = Testimonials::find($id);
+        $data = Carousals::find($id);
         if ($request->hasFile('image')) {
 			$filename = $request->image->getClientOriginalName();
-            $request->image->storeAs('testimonials', $filename, 'public' );
+            $request->image->storeAs('Carousals', $filename, 'public' );
         }
 
         $data->website_id = $this->websiteDetails->id;
@@ -165,8 +165,8 @@ class TestimonialsController extends Controller
         $data->status = $request->status;
         $data->save();
 
-        $request->session()->flash('message', 'Testimonials successfully updated');
-        return redirect()->route('admin.testimonials'); 
+        $request->session()->flash('message', 'Carousals successfully updated');
+        return redirect()->route('admin.Carousals'); 
     }
 
     /**
@@ -182,11 +182,10 @@ class TestimonialsController extends Controller
      */
     public function destroy($id)
     {
-        $del = Testimonials::find($id);
+        $del = Carousals::find($id);
         if($del){
             $del->delete();
         }
-        return response()->json( ['data' => ['message' => 'Testimonials successfully deleted.' ] ], 200);
-        // return redirect()->route('admin.testimonials');
+        return response()->json( ['data' => ['message' => 'Carousals successfully deleted.' ] ], 200);
     }
 }

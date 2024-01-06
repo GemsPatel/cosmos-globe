@@ -105,9 +105,7 @@
                                                                         width="134" height="34" alt="Treck">
                                                                 </a>
                                                             </div>
-                                                            <p class="footer-widget__about-text">Aliqua id fugiat nostrud
-                                                                irure ex duis ea quis id
-                                                                quis ad et. Sunt qui esse pariatur duis deserunt.</p>
+                                                            <p class="footer-widget__about-text">{{getConfigurationfield('FOOTER_MSG')}}</p>
                                                             <div class="site-footer__social">
                                                                 <a href="https://www.facebook.com/">
                                                                     <i aria-hidden="true" class="  fab fa-facebook-f"></i>
@@ -141,23 +139,11 @@
                                                                     class="footer-widget__link-list list-unstyled ml-0">
                                                                     <li id="menu-item-1048"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1048">
-                                                                        <a href="about-us.html">About</a>
-                                                                    </li>
-                                                                    <li id="menu-item-1049"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049">
-                                                                        <a href="team/index.html">Meet Experts</a>
-                                                                    </li>
-                                                                    <li id="menu-item-1050"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1050">
-                                                                        <a href="blog/index.html">News &#038; Media</a>
-                                                                    </li>
-                                                                    <li id="menu-item-1051"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1051">
-                                                                        <a href="treck-shop/index.html">Projects</a>
+                                                                        <a href="{{route('aboutUs')}}">About</a>
                                                                     </li>
                                                                     <li id="menu-item-1052"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1052">
-                                                                        <a href="contact.html">Contact</a>
+                                                                        <a href="{{route('contactUs')}}">Contact</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -173,34 +159,25 @@
                                                     data-widget_type="footer-nav-menu.default">
                                                     <div class="container">
                                                         <div class="footer-widget__column footer-widget__link">
-                                                            <div class="footer-widget__title-box">
-                                                                <h3 class="footer-widget__title">Visa</h3>
-                                                            </div>
-                                                            <div class="menu-visa-container">
-                                                                <ul id="menu-visa"
-                                                                    class="footer-widget__link-list list-unstyled ml-0">
-                                                                    <li id="menu-item-1054"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1054">
-                                                                        <a href="visa-details.html">Work Visa</a>
-                                                                    </li>
-                                                                    <li id="menu-item-1055"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1055">
-                                                                        <a href="visa-details.html">Students Visa</a>
-                                                                    </li>
-                                                                    <li id="menu-item-1056"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1056">
-                                                                        <a href="visa-details.html">Business Visa</a>
-                                                                    </li>
-                                                                    <li id="menu-item-1057"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1057">
-                                                                        <a href="visa-details.html">Family Visa</a>
-                                                                    </li>
-                                                                    <li id="menu-item-1058"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1058">
-                                                                        <a href="visa-details.html">Travel Visa</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                            <?php 
+                                                            $footerMenu = getFrontEndFooterMenu( $headerInfo->id, 'visa' );
+                                                            ?>
+                                                            @foreach( $footerMenu as $menu )
+                                                                <div class="footer-widget__title-box">
+                                                                    <h3 class="footer-widget__title">{{$menu->title}}</h3>
+                                                                </div>
+                                                                @if( $menu->child )
+                                                                    <div class="menu-visa-container">
+                                                                        <ul id="menu-visa" class="footer-widget__link-list list-unstyled ml-0">
+                                                                            @foreach( $menu->child as $child )
+                                                                                <li id="menu-item-1054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1054">
+                                                                                    <a href="{{url('category/'.$child['slug'])}}" title="{{$child['title']}}">{{$child->title}}</a>
+                                                                                </li>
+                                                                            @endforeach
+                                                                        </ul>
+                                                                    </div>
+                                                                @endif
+                                                            @endforeach
                                                         </div>
                                                     </div>
                                                 </div>
@@ -315,18 +292,17 @@
                                                                             class="fas fa-envelope"></span>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <p><a
-                                                                                href="mailto:needhelp@company.com">needhelp@company.com</a>
+                                                                        <p>
+                                                                            <a href="mailto:{{getConfigurationfield('INFO_EMAIL_ADDRESS')}}">{{getConfigurationfield('INFO_EMAIL_ADDRESS')}}</a>
                                                                         </p>
                                                                     </div>
                                                                 </li>
                                                                 <li>
                                                                     <div class="icon icon-svg">
-                                                                        <span aria-hidden="true"
-                                                                            class="fas fa-map-marker-alt"></span>
+                                                                        <span aria-hidden="true" class="fas fa-map-marker-alt"></span>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <p>30 Commercial Road <br> Fratton, Australia</p>
+                                                                        <p>{{getConfigurationfield('LOCATION')}}</p>
                                                                     </div>
                                                                 </li>
                                                                 <li>
@@ -334,8 +310,7 @@
                                                                         <span aria-hidden="true" class="fas fa-clock"></span>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <p>Mon – Sat: 8:00 am to 6:00 pm <br> Sunday: Closed
-                                                                        </p>
+                                                                        <p>{{getConfigurationfield('OPEN_OFFICE')}}</p>
                                                                     </div>
                                                                 </li>
                                                             </ul>

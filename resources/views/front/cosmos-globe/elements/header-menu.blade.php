@@ -36,7 +36,7 @@
                                                                             class="  fas fa-map-marker"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <p>30 Broklyn Golden Street. USA</p>
+                                                                        <p>{{getConfigurationfield('LOCATION')}}</p>
                                                                     </div>
                                                                 </li>
                                                                 <li>
@@ -45,9 +45,7 @@
                                                                             class="  fas fa-envelope"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <p><a
-                                                                                href="mailto:Info@company.com">Info@company.com</a>
-                                                                        </p>
+                                                                        <p><a href="mailto:{{getConfigurationfield('INFO_EMAIL_ADDRESS')}}">{{getConfigurationfield('INFO_EMAIL_ADDRESS')}}</a></p>
                                                                     </div>
                                                                 </li>
                                                                 <li>
@@ -56,7 +54,7 @@
                                                                             class="  fas fa-clock"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <p>Mon - Fri 8.00 am - 6.00 pm</p>
+                                                                        <p>{{getConfigurationfield('OPEN_OFFICE')}}</p>
                                                                     </div>
                                                                 </li>
                                                             </ul>
@@ -91,8 +89,7 @@
                                                                         $menuArr = getFrontEndMenu( $headerInfo->id );
                                                                     ?>
                                                                     @foreach ( $menuArr as $k=>$ar )
-                                                                        <li id="menu-item-984"
-                                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-984">
+                                                                        <li id="menu-item-984" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-984">
                                                                             <a href="#">{{$ar->title}}</a>
                                                                             @if( COUNT( $ar->child ) > 0 )
                                                                                 <ul class="sub-menu">
