@@ -41,7 +41,7 @@
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body table-responsive">
-                                          <table id="role" class="table table-bordered table-striped">
+                                          <table id="slider" class="table table-bordered table-striped">
                                                 <thead>
                                                       <tr>
                                                             <th>#</th>
@@ -54,11 +54,11 @@
                                                 </thead>
                                                 <tbody>
                                                       @forelse ($dataArr as $ar)
-                                                            <tr id="row_{{$ar->id}}" class="role_row">
+                                                            <tr id="row_{{$ar->id}}" class="slider_row">
                                                                   <td>{{ $ar->id }}</td>
-                                                                  <td>{{ $ar->slider_type->title }}</td>
+                                                                  <td>{{ $ar->sliderType->title }}</td>
                                                                   <td>{{ $ar->title }}</td>
-                                                                  <td>{{ $ar->category->title }}</td>
+                                                                  <td>{{ $ar->category->title ?? '-' }}</td>
                                                                   <td>
                                                                         @if( $ar->status == 0 )
                                                                               <span class="badge badge-pill badge-warning"> Disabled </span>
@@ -77,7 +77,7 @@
                                                                               {{-- <form action="{{ route('admin.sliders.delete', [$ar->id] ) }}" method="POST">
                                                                                     @method('DELETE')
                                                                                     @csrf --}}
-                                                                                    <button class="btn btn-danger btn-size p-0 d-flex align-items-center justify-content-center delete-record" data-id="{{$ar->id}}" data-title="{{ $ar->title }}" data-segment="role"><i class="fa fa-trash fa-sm" aria-hidden="true"></i></button>
+                                                                                    <button class="btn btn-danger btn-size p-0 d-flex align-items-center justify-content-center delete-record" data-id="{{$ar->id}}" data-title="{{ $ar->title }}" data-segment="slider"><i class="fa fa-trash fa-sm" aria-hidden="true"></i></button>
                                                                               {{-- </form> --}}
                                                                         </div>
                                                                   </td>

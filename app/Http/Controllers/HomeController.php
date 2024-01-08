@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Admin\Sliders;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
 
     public $websiteDetails = "";
+   
 
     /**
      * Create a new controller instance.
@@ -18,6 +20,7 @@ class HomeController extends Controller
     {
         // $this->middleware('auth');
         $this->websiteDetails = getHeaderInformation();
+        
     }
 
     /**
@@ -28,6 +31,7 @@ class HomeController extends Controller
     public function index()
     {
         $headerInfo = $this->websiteDetails;
-        return view('front.'.$this->websiteDetails->slug.'.index', compact('headerInfo' ));
+        $testimonials = Sliders::where('status','1')->get();
+        return view('front.'.$this->websiteDetails->slug.'.index', compact('headerInfo','testimonials' ));
     }
 }

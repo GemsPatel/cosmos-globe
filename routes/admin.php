@@ -163,6 +163,15 @@ Route::group(['prefix' => '','middleware' => 'adminAuth'], function () {
 			Route::delete('/delete/{id}', [GoogleAdsController::class, 'destroy'])->name('admin.gads.delete');
 		});
 
+		Route::group(['prefix' => 'gallery'], function(){
+			Route::get('/', [AdminMenuController::class, 'index'])->name('admin.gallery');
+			Route::get('/create', [AdminMenuController::class, 'create'])->name('admin.menu.create');
+			Route::post('/store', [AdminMenuController::class, 'store'])->name('admin.menu.store');
+			Route::get('/edit/{id}', [AdminMenuController::class, 'edit'])->name('admin.menu.edit');
+			Route::post('/update/{id}', [AdminMenuController::class, 'update'])->name('admin.menu.update');
+			Route::delete('/delete/{id}', [AdminMenuController::class, 'destroy'])->name('admin.menu.delete');
+		});
+
 	/**
 	 * Setting Management
 	 */

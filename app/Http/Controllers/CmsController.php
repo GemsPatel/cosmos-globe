@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Admin\Sliders;
+use App\Http\Controllers\Controller;
 
 class CmsController extends Controller
 {
@@ -25,10 +26,12 @@ class CmsController extends Controller
     public function aboutUs()
     {
         $headerInfo = $this->websiteDetails;
+        $testimonials = Sliders::where('status','1')->get();
         return view('front.'.$this->websiteDetails->slug.'.CMS.aboutUs',[
             'title'=>'About Us',
             'breadcrumb' => array(['title' => 'About Us', 'link' => ""]),
             'headerInfo' => $this->websiteDetails,
+            'testimonials'=>$testimonials
         ]);
     }
 

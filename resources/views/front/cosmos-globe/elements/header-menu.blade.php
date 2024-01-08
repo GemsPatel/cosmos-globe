@@ -120,6 +120,9 @@
                                                                 </ul>
                                                             </div>
                                                         </div>
+                                                        <?php
+    $testimonialArr = getFrontEndMenu( 1 );//1 : Testimonial
+                                                        ?>
                                                         <div class="main-menu__right">
                                                             <div class="main-menu__call">
                                                                 <div class="main-menu__call-icon">

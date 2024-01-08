@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Request as FacadesRequest;
 use App\Models\Admin\AdminMenu;
 use App\Models\Admin\BlogComments;
 use App\Models\Admin\Permission;
+use App\Models\Admin\Sliders;
+use App\Models\Admin\SliderTypes;
 use App\Models\GoogleAdvertisement;
 use App\Models\SiteConfig;
 use App\Models\Website;
@@ -199,7 +201,26 @@ function getAdminSideMenuPerimission(){
 function getHeaderInformation(){
     return Website::where( 'status', 1 )->first();
 }
+// function getTestimonoals( $website_id = "", $slug=""){
 
+//     $menuArr = [];
+//     $parentArr = SliderTypes::where( [
+//         'website_id' => $website_id,
+//         'status' => 1 
+//     ] )->get();
+
+    
+//     foreach( $parentArr as $k=>$ar ){
+//         $menuArr[$k] = $ar;
+//         $menuArr[$k]['testimonials'] = Sliders::where( [
+//             'website_id' => $website_id,
+//             'slider_type_id'=>$slug,
+//             'status' => 1 
+//         ] )->get();
+//     }
+
+//     return $menuArr;
+// }
 /**
  *
  */
