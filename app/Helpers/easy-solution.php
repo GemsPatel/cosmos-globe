@@ -41,7 +41,8 @@ function getFrontEndMenu( $website_id = 1){
         'website_id' => $website_id,
         'parent_id' => 0, 
         'status' => 1 
-    ] )->get();
+    ] )
+    ->get();
 
     foreach( $parentArr as $k=>$ar ){
         $menuArr[$k] = $ar;
@@ -317,4 +318,18 @@ function getLeftSideMenus( $slug ){
         'parent_id' => $parentCat->id,
         'status' => 1
     ] )->get();
+}
+
+/**
+ * get category bullet point
+ */
+function getCategoryBulletPoint( $sub_id, $slug ){
+    $result = Blogs::where( [ 'sub_category_id' => $sub_id, 'slug' => $slug ] )->select('image', 'bullet_points')->first();
+    if( isset( $result->image ) ){
+        $image = $result->image;
+        $point = json_decode( $result->bullet_points, 1 );
+        return [ 'image' => $image, 'point' => $point[0]];
+    } else {
+        return false;
+    }
 }

@@ -71,6 +71,7 @@
             </div>
         </div>
     </section>
+    
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-d0443d1 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
         data-id="d0443d1" data-element_type="section">
@@ -191,6 +192,7 @@
             </div>
         </div>
     </section>
+
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-3944ae9 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
         data-id="3944ae9" data-element_type="section">
@@ -238,9 +240,7 @@
                                                         <p>Years of Experience</p>
                                                     </div>
                                                     <div class="about-one__badge">
-                                                        <img decoding="async"
-                                                            src="{{url('public/uploads/2023/04/about-one-badge.png')}}"
-                                                            alt="alt" title="about-one-badge">
+                                                        <img decoding="async" style="width: 200px; height: 150px " src="{{url( 'storage/app/'.$headerInfo->header_logo )}}" alt="alt" title="{{pgTitle( $headerInfo->name )}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -305,200 +305,9 @@
             </div>
         </div>
     </section>
-    <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-5312041 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-        data-id="5312041" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-no">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8b0b210"
-                data-id="8b0b210" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-78294a2 elementor-widget elementor-widget-treck-service"
-                        data-id="78294a2" data-element_type="widget" data-widget_type="treck-service.default">
-                        <div class="elementor-widget-container">
-                            <!--Services One Start-->
-                            <section class="services-one">
-                                <div class="container">
-                                    <div class="section-title text-center">
-                                        <div class="section-title__tagline-box">
-                                            <span class="section-title__tagline">our Visa categories</span>
-                                            <div class="section-title__border-box"></div>
-                                        </div>
-                                        <h2 class="section-title__title">We Offers Citizenship &amp; <br>
-                                            Immigration Services</h2>
-                                    </div>
-                                    <div class="row">
-                                        <!--Services One Single Start-->
-                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                            data-wow-delay="100ms">
-                                            <div class="services-one__single">
-                                                <div class="services-one__single-inner">
-                                                    <div class="services-one__hover-content">
-                                                        <div class="services-one__hover-bg"
-                                                            style="background-image: url('public/uploads/2023/04/services-one-img-1.jpg');">
-                                                        </div>
-                                                        <div class="services-one__hover-title-box">
-                                                            <h3 class="services-one__hover-title">
-                                                                <a class="" href="visa-details.html">Tourist
-                                                                    Visa</a>
-                                                            </h3>
-                                                            <div class="services-one__hover-shpae">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/services-one-hover-shape.png')}}"
-                                                                    alt="alt" title="services-one-hover-shape">
-                                                            </div>
-                                                        </div>
-                                                        <div class="services-one__arrow">
-                                                            <a href="visa-details.html">
-                                                                <span aria-hidden="true"
-                                                                    class="  icon-up-right"></span> </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-one__icon icon-svg-large">
-                                                        <span aria-hidden="true" class="  icon-tourist"></span>
-                                                    </div>
-                                                    <h3 class="services-one__title">
-                                                        <a class=" " href="visa-details.html">Tourist
-                                                            Visa</a>
-                                                    </h3>
-                                                    <p class="services-one__text">Desire that they can forese
-                                                        trouble bound ensue.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Services One Single End-->
-                                        <!--Services One Single Start-->
-                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                            data-wow-delay="200ms">
-                                            <div class="services-one__single">
-                                                <div class="services-one__single-inner">
-                                                    <div class="services-one__hover-content">
-                                                        <div class="services-one__hover-bg"
-                                                            style="background-image: url('public/uploads/2023/04/services-one-img-2.jpg');">
-                                                        </div>
-                                                        <div class="services-one__hover-title-box">
-                                                            <h3 class="services-one__hover-title">
-                                                                <a class="  " href="visa-details.html">Business
-                                                                    Visa</a>
-                                                            </h3>
-                                                            <div class="services-one__hover-shpae">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/services-one-hover-shape.png')}}"
-                                                                    alt="alt" title="services-one-hover-shape">
-                                                            </div>
-                                                        </div>
-                                                        <div class="services-one__arrow">
-                                                            <a href="visa-details.html">
-                                                                <span aria-hidden="true"
-                                                                    class="  icon-up-right"></span> </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-one__icon icon-svg-large">
-                                                        <span aria-hidden="true"
-                                                            class="   icon-consulting"></span>
-                                                    </div>
-                                                    <h3 class="services-one__title">
-                                                        <a class="   " href="visa-details.html">Business
-                                                            Visa</a>
-                                                    </h3>
-                                                    <p class="services-one__text services-one__text">Desire that
-                                                        they can forese trouble bound ensue.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Services One Single End-->
-                                        <!--Services One Single Start-->
-                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                            data-wow-delay="300ms">
-                                            <div class="services-one__single">
-                                                <div class="services-one__single-inner">
-                                                    <div class="services-one__hover-content">
-                                                        <div class="services-one__hover-bg"
-                                                            style="background-image: url('public/uploads/2023/04/services-one-img-3.jpg');">
-                                                        </div>
-                                                        <div class="services-one__hover-title-box">
-                                                            <h3 class="services-one__hover-title">
-                                                                <a class="    " href="visa-details.html">Student
-                                                                    Visa</a>
-                                                            </h3>
-                                                            <div class="services-one__hover-shpae">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/services-one-hover-shape.png')}}"
-                                                                    alt="alt" title="services-one-hover-shape">
-                                                            </div>
-                                                        </div>
-                                                        <div class="services-one__arrow">
-                                                            <a href="visa-details.html">
-                                                                <span aria-hidden="true"
-                                                                    class="  icon-up-right"></span> </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-one__icon icon-svg-large">
-                                                        <span aria-hidden="true"
-                                                            class="   icon-graduating-student"></span>
-                                                    </div>
-                                                    <h3 class="services-one__title">
-                                                        <a class="     " href="visa-details.html">Student
-                                                            Visa</a>
-                                                    </h3>
-                                                    <p
-                                                        class="services-one__text services-one__text services-one__text">
-                                                        Desire that they can forese trouble bound ensue.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Services One Single End-->
-                                        <!--Services One Single Start-->
-                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                            data-wow-delay="400ms">
-                                            <div class="services-one__single">
-                                                <div class="services-one__single-inner">
-                                                    <div class="services-one__hover-content">
-                                                        <div class="services-one__hover-bg"
-                                                            style="background-image: url('public/uploads/2023/04/services-one-img-4.jpg');">
-                                                        </div>
-                                                        <div class="services-one__hover-title-box">
-                                                            <h3 class="services-one__hover-title">
-                                                                <a class="      "
-                                                                    href="visa-details.html">Residence
-                                                                    Visa</a>
-                                                            </h3>
-                                                            <div class="services-one__hover-shpae">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/services-one-hover-shape.png')}}"
-                                                                    alt="alt" title="services-one-hover-shape">
-                                                            </div>
-                                                        </div>
-                                                        <div class="services-one__arrow">
-                                                            <a href="visa-details.html">
-                                                                <span aria-hidden="true"
-                                                                    class="  icon-up-right"></span> </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="services-one__icon icon-svg-large">
-                                                        <span aria-hidden="true"
-                                                            class="   icon-condominium"></span>
-                                                    </div>
-                                                    <h3 class="services-one__title">
-                                                        <a class="       " href="visa-details.html">Residence
-                                                            Visa</a>
-                                                    </h3>
-                                                    <p
-                                                        class="services-one__text services-one__text services-one__text services-one__text">
-                                                        Desire that they can forese trouble bound ensue.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Services One Single End-->
-                                    </div>
-                                </div>
-                            </section>
-                            <!--Services One End-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    @include('front.'.$headerInfo->slug.'.elements.visa-service')
+
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-455b642 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
         data-id="455b642" data-element_type="section">
@@ -593,6 +402,7 @@
             </div>
         </div>
     </section>
+
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-e89b777 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
         data-id="e89b777" data-element_type="section">
@@ -689,282 +499,7 @@
             </div>
         </div>
     </section>
-    <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-a94888d elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-        data-id="a94888d" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-no">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-03827cd"
-                data-id="03827cd" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-c84c5e8 elementor-widget elementor-widget-treck-service"
-                        data-id="c84c5e8" data-element_type="widget" data-widget_type="treck-service.default">
-                        <div class="elementor-widget-container">
 
-                            <!--Coaching One Start-->
-                            <section class="coaching-one">
-                                <div class="coaching-one__top">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-xl-7 col-lg-6">
-                                                <div class="coaching-one__left">
-                                                    <div class="section-title text-left">
-                                                        <div class="section-title__tagline-box">
-                                                            <span class="section-title__tagline">Coaching we
-                                                                offer</span>
-                                                            <div class="section-title__border-box"></div>
-                                                        </div>
-                                                        <h2 class="section-title__title">Get the Best Trainings
-                                                            you
-                                                            Deserve</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-5 col-lg-6">
-                                                <div class="coaching-one__right">
-                                                    <p class="coaching-one__right">There are many variations of
-                                                        passages of available but the
-                                                        majority have suffered alteration in some form, by
-                                                        injected hum randomised words
-                                                        which
-                                                        don't slightly.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="coaching-one__bottom">
-                                    <div class="container">
-                                        <div class="row">
-                                            <!--Coaching One Single Start-->
-                                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                                data-wow-delay="100ms">
-                                                <div class="coaching-one__single">
-                                                    <div class="coaching-one__img-box">
-                                                        <div class="coaching-one__img">
-                                                            <img decoding="async"
-                                                                src="{{url('public/uploads/2023/04/coaching-1-1.jpg')}}"
-                                                                alt="alt" title="coaching-1-1">
-                                                        </div>
-                                                        <div class="coaching-one__content">
-                                                            <div class="coaching-one__shape-1">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/coaching-one-shape-1.png')}}"
-                                                                    alt="alt" title="coaching-one-shape-1">
-                                                            </div>
-                                                            <h3 class="coaching-one__title">
-                                                                <a class=""
-                                                                    href="coaching-details.html">Citizenship
-                                                                    Test</a>
-                                                            </h3>
-                                                            <div class="coaching-one__arrow-box">
-                                                                <a href="coaching-details.html"
-                                                                    class="coaching-one__arrow">
-                                                                    <i aria-hidden="true"
-                                                                        class="  icon-up-right"></i> </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="coaching-one__hover-content">
-                                                            <div class="coaching-one__hover-shape-1"></div>
-                                                            <div class="coaching-one__hover-icon">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/coaching-one-hover-icon.png')}}"
-                                                                    alt="alt" title="coaching-one-hover-icon">
-                                                            </div>
-                                                            <h3 class="coaching-one__hover-title">
-                                                                <a class=" "
-                                                                    href="coaching-details.html">Citizenship
-                                                                    Test</a>
-                                                            </h3>
-                                                            <p class="coaching-one__hover-text">IELTS is an
-                                                                English language test
-                                                                for study, migration or work</p>
-                                                            <div class="coaching-one__hover-arrow-box">
-                                                                <a href="coaching-details.html"
-                                                                    class="coaching-one__hover-arrow">
-                                                                    <i aria-hidden="true"
-                                                                        class="  icon-down"></i> </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--Coaching One Single End-->
-                                            <!--Coaching One Single Start-->
-                                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                                data-wow-delay="200ms">
-                                                <div class="coaching-one__single">
-                                                    <div class="coaching-one__img-box">
-                                                        <div class="coaching-one__img">
-                                                            <img decoding="async"
-                                                                src="{{url('public/uploads/2023/04/coaching-1-2.jpg')}}"
-                                                                alt="alt" title="coaching-1-2">
-                                                        </div>
-                                                        <div class="coaching-one__content">
-                                                            <div class="coaching-one__shape-1">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/coaching-one-shape-1.png')}}"
-                                                                    alt="alt" title="coaching-one-shape-1">
-                                                            </div>
-                                                            <h3 class="coaching-one__title">
-                                                                <a class="  " href="coaching-details.html">IELTS
-                                                                    Coaching</a>
-                                                            </h3>
-                                                            <div class="coaching-one__arrow-box">
-                                                                <a href="coaching-details.html"
-                                                                    class="coaching-one__arrow">
-                                                                    <i aria-hidden="true"
-                                                                        class="  icon-up-right"></i> </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="coaching-one__hover-content">
-                                                            <div class="coaching-one__hover-shape-1"></div>
-                                                            <div class="coaching-one__hover-icon">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/coaching-one-hover-icon.png')}}"
-                                                                    alt="alt" title="coaching-one-hover-icon">
-                                                            </div>
-                                                            <h3 class="coaching-one__hover-title">
-                                                                <a class="   "
-                                                                    href="coaching-details.html">IELTS
-                                                                    Coaching</a>
-                                                            </h3>
-                                                            <p
-                                                                class="coaching-one__hover-text coaching-one__hover-text">
-                                                                IELTS is an English language test
-                                                                for study, migration or work</p>
-                                                            <div class="coaching-one__hover-arrow-box">
-                                                                <a href="coaching-details.html"
-                                                                    class="coaching-one__hover-arrow">
-                                                                    <i aria-hidden="true"
-                                                                        class="  icon-down"></i> </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--Coaching One Single End-->
-                                            <!--Coaching One Single Start-->
-                                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                                data-wow-delay="300ms">
-                                                <div class="coaching-one__single">
-                                                    <div class="coaching-one__img-box">
-                                                        <div class="coaching-one__img">
-                                                            <img decoding="async"
-                                                                src="{{url('public/uploads/2023/04/coaching-1-3.jpg')}}"
-                                                                alt="alt" title="coaching-1-3">
-                                                        </div>
-                                                        <div class="coaching-one__content">
-                                                            <div class="coaching-one__shape-1">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/coaching-one-shape-1.png')}}"
-                                                                    alt="alt" title="coaching-one-shape-1">
-                                                            </div>
-                                                            <h3 class="coaching-one__title">
-                                                                <a class="    "
-                                                                    href="coaching-details.html">TOEFL
-                                                                    Coaching</a>
-                                                            </h3>
-                                                            <div class="coaching-one__arrow-box">
-                                                                <a href="coaching-details.html"
-                                                                    class="coaching-one__arrow">
-                                                                    <i aria-hidden="true"
-                                                                        class="  icon-up-right"></i> </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="coaching-one__hover-content">
-                                                            <div class="coaching-one__hover-shape-1"></div>
-                                                            <div class="coaching-one__hover-icon">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/coaching-one-hover-icon.png')}}"
-                                                                    alt="alt" title="coaching-one-hover-icon">
-                                                            </div>
-                                                            <h3 class="coaching-one__hover-title">
-                                                                <a class="     "
-                                                                    href="coaching-details.html">TOEFL
-                                                                    Coaching</a>
-                                                            </h3>
-                                                            <p
-                                                                class="coaching-one__hover-text coaching-one__hover-text coaching-one__hover-text">
-                                                                IELTS is an English language test
-                                                                for study, migration or work</p>
-                                                            <div class="coaching-one__hover-arrow-box">
-                                                                <a href="coaching-details.html"
-                                                                    class="coaching-one__hover-arrow">
-                                                                    <i aria-hidden="true"
-                                                                        class="  icon-down"></i> </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--Coaching One Single End-->
-                                            <!--Coaching One Single Start-->
-                                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                                                data-wow-delay="400ms">
-                                                <div class="coaching-one__single">
-                                                    <div class="coaching-one__img-box">
-                                                        <div class="coaching-one__img">
-                                                            <img decoding="async"
-                                                                src="{{url('public/uploads/2023/04/coaching-1-4.jpg')}}"
-                                                                alt="coaching-1-4" title="coaching-1-4">
-                                                        </div>
-                                                        <div class="coaching-one__content">
-                                                            <div class="coaching-one__shape-1">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/coaching-one-shape-1.png')}}"
-                                                                    alt="alt" title="coaching-one-shape-1">
-                                                            </div>
-                                                            <h3 class="coaching-one__title">
-                                                                <a class="      "
-                                                                    href="coaching-details.html">PTE
-                                                                    Coaching</a>
-                                                            </h3>
-                                                            <div class="coaching-one__arrow-box">
-                                                                <a href="coaching-details.html"
-                                                                    class="coaching-one__arrow">
-                                                                    <i aria-hidden="true"
-                                                                        class="  icon-up-right"></i> </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="coaching-one__hover-content">
-                                                            <div class="coaching-one__hover-shape-1"></div>
-                                                            <div class="coaching-one__hover-icon">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/coaching-one-hover-icon.png')}}"
-                                                                    alt="alt" title="coaching-one-hover-icon">
-                                                            </div>
-                                                            <h3 class="coaching-one__hover-title">
-                                                                <a class="       "
-                                                                    href="coaching-details.html">PTE
-                                                                    Coaching</a>
-                                                            </h3>
-                                                            <p
-                                                                class="coaching-one__hover-text coaching-one__hover-text coaching-one__hover-text coaching-one__hover-text">
-                                                                IELTS is an English language test
-                                                                for study, migration or work</p>
-                                                            <div class="coaching-one__hover-arrow-box">
-                                                                <a href="coaching-details.html"
-                                                                    class="coaching-one__hover-arrow">
-                                                                    <i aria-hidden="true"
-                                                                        class="  icon-down"></i> </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--Coaching One Single End-->
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <!--Coaching One End-->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-b226b10 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
         data-id="b226b10" data-element_type="section">
@@ -986,192 +521,9 @@
             </div>
         </div>
     </section>
-    <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-2d62e4f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-        data-id="2d62e4f" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-no">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f458638"
-                data-id="f458638" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-56829a5 elementor-widget elementor-widget-treck-country"
-                        data-id="56829a5" data-element_type="widget" data-widget_type="treck-country.default">
-                        <div class="elementor-widget-container">
-                            <!--Countries One Start-->
-                            <section class="countries-one">
-                                <div class="countries-one__bg"
-                                    style="background-image: url('public/uploads/2023/04/countries-one-bg.png');">
-                                </div>
-                                <div class="container">
-                                    <div class="section-title text-center">
-                                        <div class="section-title__tagline-box">
-                                            <span class="section-title__tagline">Our countries list</span>
-                                            <div class="section-title__border-box"></div>
-                                        </div>
-                                        <h2 class="section-title__title">Select the Country of
-                                            <br> Your Choice
-                                        </h2>
-                                    </div>
-                                    <div class="row">
-                                        <!--Countries One Single Start-->
-                                        <div class="col-xl-2 col-lg-4 col-md-6">
-                                            <div class="countries-one__single">
-                                                <div class="countries-one__img-box">
-                                                    <div class="countries-one__img">
-                                                        <img decoding="async"
-                                                            src="{{url('public/uploads/2023/04/countries-1-1.jpg')}}"
-                                                            alt="alt" title="countries-1-1">
-                                                    </div>
-                                                </div>
-                                                <h3 class="countries-one__title">
-                                                    <a class="" href="countries-details/index.html">Germany</a>
-                                                </h3>
-                                                <p class="countries-one__text">Nulla ut elemen tum sapien</p>
-                                                <div class="countries-one__arrow-box">
-                                                    <a href="countries-details/index.html"
-                                                        class="countries-one__arrow">
-                                                        <span aria-hidden="true"
-                                                            class="  icon-right-arrow"></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Countries One Single End-->
-                                        <!--Countries One Single Start-->
-                                        <div class="col-xl-2 col-lg-4 col-md-6">
-                                            <div class="countries-one__single">
-                                                <div class="countries-one__img-box">
-                                                    <div class="countries-one__img">
-                                                        <img decoding="async"
-                                                            src="{{url('public/uploads/2023/04/countries-1-2.jpg')}}"
-                                                            alt="alt" title="countries-1-2">
-                                                    </div>
-                                                </div>
-                                                <h3 class="countries-one__title">
-                                                    <a class=" " href="countries-details/index.html">London</a>
-                                                </h3>
-                                                <p class="countries-one__text countries-one__text">Nulla ut
-                                                    elemen tum sapien</p>
-                                                <div class="countries-one__arrow-box">
-                                                    <a href="countries-details/index.html"
-                                                        class="countries-one__arrow">
-                                                        <span aria-hidden="true"
-                                                            class="  icon-right-arrow"></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Countries One Single End-->
-                                        <!--Countries One Single Start-->
-                                        <div class="col-xl-2 col-lg-4 col-md-6">
-                                            <div class="countries-one__single">
-                                                <div class="countries-one__img-box">
-                                                    <div class="countries-one__img">
-                                                        <img decoding="async"
-                                                            src="{{url('public/uploads/2023/04/countries-1-3.jpg')}}"
-                                                            alt="alt" title="countries-1-3">
-                                                    </div>
-                                                </div>
-                                                <h3 class="countries-one__title">
-                                                    <a class="  " href="countries-details/index.html">Italy</a>
-                                                </h3>
-                                                <p
-                                                    class="countries-one__text countries-one__text countries-one__text">
-                                                    Nulla ut elemen tum sapien</p>
-                                                <div class="countries-one__arrow-box">
-                                                    <a href="countries-details/index.html"
-                                                        class="countries-one__arrow">
-                                                        <span aria-hidden="true"
-                                                            class="  icon-right-arrow"></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Countries One Single End-->
-                                        <!--Countries One Single Start-->
-                                        <div class="col-xl-2 col-lg-4 col-md-6">
-                                            <div class="countries-one__single">
-                                                <div class="countries-one__img-box">
-                                                    <div class="countries-one__img">
-                                                        <img decoding="async"
-                                                            src="{{url('public/uploads/2023/04/countries-1-4.jpg')}}"
-                                                            alt="alt" title="countries-1-4">
-                                                    </div>
-                                                </div>
-                                                <h3 class="countries-one__title">
-                                                    <a class="   "
-                                                        href="countries-details/index.html">Australia</a>
-                                                </h3>
-                                                <p
-                                                    class="countries-one__text countries-one__text countries-one__text countries-one__text">
-                                                    Nulla ut elemen tum sapien</p>
-                                                <div class="countries-one__arrow-box">
-                                                    <a href="countries-details/index.html"
-                                                        class="countries-one__arrow">
-                                                        <span aria-hidden="true"
-                                                            class="  icon-right-arrow"></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Countries One Single End-->
-                                        <!--Countries One Single Start-->
-                                        <div class="col-xl-2 col-lg-4 col-md-6">
-                                            <div class="countries-one__single">
-                                                <div class="countries-one__img-box">
-                                                    <div class="countries-one__img">
-                                                        <img decoding="async"
-                                                            src="{{url('public/uploads/2023/04/countries-1-5.jpg')}}"
-                                                            alt="alt" title="countries-1-5">
-                                                    </div>
-                                                </div>
-                                                <h3 class="countries-one__title">
-                                                    <a class="    "
-                                                        href="countries-details/index.html">Canada</a>
-                                                </h3>
-                                                <p
-                                                    class="countries-one__text countries-one__text countries-one__text countries-one__text countries-one__text">
-                                                    Nulla ut elemen tum sapien</p>
-                                                <div class="countries-one__arrow-box">
-                                                    <a href="countries-details/index.html"
-                                                        class="countries-one__arrow">
-                                                        <span aria-hidden="true"
-                                                            class="  icon-right-arrow"></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Countries One Single End-->
-                                        <!--Countries One Single Start-->
-                                        <div class="col-xl-2 col-lg-4 col-md-6">
-                                            <div class="countries-one__single">
-                                                <div class="countries-one__img-box">
-                                                    <div class="countries-one__img">
-                                                        <img decoding="async"
-                                                            src="{{url('public/uploads/2023/04/countries-1-6.jpg')}}"
-                                                            alt="alt" title="countries-1-6">
-                                                    </div>
-                                                </div>
-                                                <h3 class="countries-one__title">
-                                                    <a class="     "
-                                                        href="countries-details/index.html">Turkey</a>
-                                                </h3>
-                                                <p
-                                                    class="countries-one__text countries-one__text countries-one__text countries-one__text countries-one__text countries-one__text">
-                                                    Nulla ut elemen tum sapien</p>
-                                                <div class="countries-one__arrow-box">
-                                                    <a href="countries-details/index.html"
-                                                        class="countries-one__arrow">
-                                                        <span aria-hidden="true"
-                                                            class="  icon-right-arrow"></span> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Countries One Single End-->
-                                    </div>
-                                </div>
-                            </section>
-                            <!--Countries One End-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
+    @include('front.'.$headerInfo->slug.'.elements.country-service')
+
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-95ca3ab elementor-section-full_width elementor-section-height-default elementor-section-height-default"
         data-id="95ca3ab" data-element_type="section">
@@ -1366,6 +718,7 @@
             </div>
         </div>
     </section>
+
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-ec48dff elementor-section-full_width home__one elementor-section-height-default elementor-section-height-default"
         data-id="ec48dff" data-element_type="section">
@@ -1690,6 +1043,7 @@
             </div>
         </div>
     </section>
+
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-3f2c511 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
         data-id="3f2c511" data-element_type="section">
@@ -1749,6 +1103,7 @@
             </div>
         </div>
     </section>
+
     <section
         class="elementor-section elementor-top-section elementor-element elementor-element-2ac7ab8 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
         data-id="2ac7ab8" data-element_type="section">
@@ -1961,6 +1316,7 @@
             </div>
         </div>
     </section>
+
 </div>
 
 

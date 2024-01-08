@@ -16,9 +16,8 @@
                                     <div class="main-menu__wrapper">
                                         <div class="main-menu__wrapper-inner">
                                             <div class="main-menu__logo logo-retina">
-                                                <a href="{{route('home')}}">
-                                                    <img decoding="async" width="136" height="39"
-                                                        src="{{url('public/uploads/2023/04/logo-dark.png')}}" alt="Treck">
+                                                <a href="{{url('/')}}" class="logo-holder" title="{{pgTitle( $headerInfo->name )}}">
+                                                    <img class="" style="height: 55px; width: 120px" src="{{url( 'storage/app/'.$headerInfo->header_logo )}}" alt="{{pgTitle( $headerInfo->name )}}">
                                                 </a>
                                             </div>
                                             <div class="main-menu__search-box d-none">
@@ -60,15 +59,15 @@
                                                             </ul>
                                                         </div>
                                                         <div class="main-menu__top-right">
-                                                            <ul class="list-unstyled main-menu__top-menu ml-0">
+                                                            <ul class="list-unstyled main-menu__top-menu ml-0 d-none">
                                                                 <li>
                                                                     <a class="" href="login.html">Login</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a class=" " href="{{route('faqs')}}">Faq’s</a>
+                                                                    <a class="" href="{{route('faqs')}}">Faq’s</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a class="  " href="{{route('contactUs')}}">Contact</a>
+                                                                    <a class="" href="{{route('contactUs')}}">Contact</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -113,10 +112,6 @@
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-971">
                                                                         <a href="{{route('gallery')}}">Gallery</a>
                                                                     </li>
-                                                                    <li id="menu-item-967"
-                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-967">
-                                                                        <a href="{{route('contactUs')}}">Contact</a>
-                                                                    </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -142,9 +137,7 @@
                                                             </div>
 
                                                             <div class="main-menu__btn-box">
-                                                                <a class="thm-btn main-menu__btn"
-                                                                    href="contact.html">Book
-                                                                    Appointment</a>
+                                                                <a class="thm-btn main-menu__btn" href="{{route('contactUs')}}">Book Appointment</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -167,9 +160,8 @@
                                             class="fa fa-times"></i></span>
 
                                     <div class="logo-box">
-                                        <a href="index.html" aria-label="logo image">
-                                            <img decoding="async" width="136" height="39"
-                                                src="{{url('public/uploads/2023/04/logo-light.png')}}" alt="COSMOS Globe" />
+                                        <a href="{{url('/')}}" class="logo-holder" title="{{pgTitle( $headerInfo->name )}}">
+                                            <img class="" style="height: 39px; width: 136px" src="{{url( 'storage/app/'.$headerInfo->header_logo )}}" alt="{{pgTitle( $headerInfo->name )}}">
                                         </a>
                                     </div>
                                     <!-- /.logo-box -->

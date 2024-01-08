@@ -10,83 +10,6 @@
                             data-id="fe9db20" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
                                 <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-6252aad elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                    data-id="6252aad" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-default">
-                                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ab81346"
-                                            data-id="ab81346" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-e5fc1b2 elementor-widget elementor-widget-treck-footer-top"
-                                                    data-id="e5fc1b2" data-element_type="widget"
-                                                    data-widget_type="treck-footer-top.default">
-                                                    <div class="container">
-                                                        <div class="site-footer__top">
-                                                            <div class="site-footer__map float-bob-x">
-                                                                <img decoding="async"
-                                                                    src="{{url('public/uploads/2023/04/site-footer-map-1.png')}}"
-                                                                    alt="alt" title="site-footer-map-1">
-                                                            </div>
-                                                            <div class="site-footer__top-left">
-                                                                <div class="site-footer__visa-box">
-                                                                    <ul class="list-unstyled site-footer__visa-list ml-0">
-                                                                        <li>
-                                                                            <div class="site-footer__visa-img">
-                                                                                <img decoding="async"
-                                                                                    src="{{url('public/uploads/2023/04/site-footer-visa-img-1-1.jpg')}}"
-                                                                                    alt="alt"
-                                                                                    title="site-footer-visa-img-1-1">
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div class="site-footer__visa-img">
-                                                                                <img decoding="async"
-                                                                                    src="{{url('public/uploads/2023/04/site-footer-visa-img-1-2.jpg')}}"
-                                                                                    alt="alt"
-                                                                                    title="site-footer-visa-img-1-2">
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div class="site-footer__visa-img">
-                                                                                <img decoding="async"
-                                                                                    src="{{url('public/uploads/2023/04/site-footer-visa-img-1-3.jpg')}}"
-                                                                                    alt="alt"
-                                                                                    title="site-footer-visa-img-1-3">
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <div class="site-footer__visa-content">
-                                                                        <p class="site-footer__visa-text">Approved Traveler
-                                                                            Visa Applications. <a href="visa-details.html">Get
-                                                                                Your
-                                                                                Visa</a></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="site-footer__call">
-                                                                <div class="site-footer__call-icon">
-                                                                    <img decoding="async"
-                                                                        src="{{url('public/uploads/2023/04/site-footer-icon-comment.png')}}"
-                                                                        alt="alt" title="site-footer-icon-comment">
-                                                                </div>
-                                                                <div class="site-footer__call-content">
-                                                                    <p class="site-footer__call-sub-title">Have Question?
-                                                                    </p>
-
-                                                                    <h5 class="site-footer__call-number">
-                                                                        <a href="tel:9288009850"><span>Free</span> +92
-                                                                            (8800) 9850</a>
-                                                                    </h5>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section
                                     class="elementor-section elementor-inner-section elementor-element elementor-element-f5fb834 site-footer__middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="f5fb834" data-element_type="section">
                                     <div class="container">
@@ -99,10 +22,8 @@
                                                     <div class="container">
                                                         <div class="footer-widget__column footer-widget__about">
                                                             <div class="footer-widget__logo logo-retina">
-                                                                <a href="index.html">
-                                                                    <img loading="lazy" decoding="async"
-                                                                        src="{{url('public/uploads/2023/04/footer-logo.png')}}"
-                                                                        width="134" height="34" alt="Treck">
+                                                                <a href="{{url('/')}}" class="logo-holder" title="{{pgTitle( $headerInfo->name )}}">
+                                                                    <img class="" style="height: 55px; width: 120px" src="{{url( 'storage/app/'.$headerInfo->header_logo )}}" alt="{{pgTitle( $headerInfo->name )}}">
                                                                 </a>
                                                             </div>
                                                             <p class="footer-widget__about-text">{{getConfigurationfield('FOOTER_MSG')}}</p>
